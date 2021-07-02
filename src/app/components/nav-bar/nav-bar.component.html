@@ -1,6 +1,12 @@
 <nav>
     <div class="nav-list">
-        <app-nav-button [navigateTo]="['/custom']" linkName="Custom Mode"></app-nav-button>
-        <app-nav-button [routerLink]="['/quick']" linkName="Quick Mode"></app-nav-button>
+        <app-button
+            *ngFor="let navItem of navigationPages; let i=index"
+            [buttonType]="navItem.isActive 
+                ? buttonTypes.NAVIGATION_ACTIVE 
+                : buttonTypes.NAVIGATION_INACTIVE"
+            [navItem]="navItem"
+            (click)="onNavClick(i)">
+        </app-button>
     </div>
 </nav>

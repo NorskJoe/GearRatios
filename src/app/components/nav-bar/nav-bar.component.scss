@@ -1,3 +1,8 @@
+@import "../../../styles/colours.scss";
+
 .nav-list {
-  height: 50px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  background-color: $colour-darkgrey;
 }

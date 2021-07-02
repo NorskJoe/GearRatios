@@ -1,0 +1,21 @@
+@import "../../../styles/colours.scss";
+
+
+.footer-container {
+    background-color: $colour-mediumgrey;
+    height: 75px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: $colour-darkblue;
+
+
+}
+.footer-copyright {
+    margin: 5px 0;
+}
+
+.footer-link {
+    color: $colour-lightgrey;
+}

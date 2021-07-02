@@ -7,7 +7,9 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CustomCalculatorComponent } from './components/custom-calculator/custom-calculator.component';
 import { QuickCalculatorComponent } from './components/quick-calculator/quick-calculator.component';
-import { NavButtonComponent } from './components/nav-button/nav-button.component';
+import { ButtonComponent } from './components/button/button.component';
+import { UserInputsComponent } from './components/user-inputs/user-inputs.component';
+import { NumberInputComponent } from './components/number-input/number-input.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { NavButtonComponent } from './components/nav-button/nav-button.component
     FooterComponent,
     CustomCalculatorComponent,
     QuickCalculatorComponent,
-    NavButtonComponent
+    ButtonComponent,
+    UserInputsComponent,
+    NumberInputComponent
   ],
   imports: [
     BrowserModule,

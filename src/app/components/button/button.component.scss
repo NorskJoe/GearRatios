@@ -1,0 +1,33 @@
+@import "../../../styles/colours.scss";
+
+.button-items {
+  display: inline;
+  margin: 5px;
+  :hover {
+    cursor: pointer;
+    color: $colour-lightblue;
+  }
+
+  button {
+    height: 60px;
+    width: 200px;
+    border: none;
+    padding: 0;
+    margin: 15px 5px 0 5px;
+    background-color: $colour-mediumgrey;
+    font-weight: bold;
+    color: $colour-darkblue;
+    &.nav-button {
+      border-radius: 8px 8px 0 0;
+    }
+    &.nav-active {
+      color: $colour-lightblue;
+      text-shadow: 0.5px 0.5px $colour-darkblue;
+    }
+    &.button-submit {
+      background-color: $colour-darkgrey;
+      border-radius: 4px;
+    }
+  }
+}
+

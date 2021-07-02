@@ -1,6 +1,14 @@
 @import "./colours";
+@import "./inputs.scss";
+
 
 body {
-  background-color: $colour-darkgrey;
+  margin: 0;
+  background-color: $colour-darkgrey !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+p {
   margin: 0;
 }
+

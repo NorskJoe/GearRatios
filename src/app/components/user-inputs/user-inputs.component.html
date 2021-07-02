@@ -1,0 +1,30 @@
+<div class="inputs-container">
+    <!-- QUICK MODE -->
+    <div class="inputs-quick" *ngIf="mode === inputType.Quick">
+        <div class="row">
+            <div class="col-md-4">
+                <app-number-input
+                    label="No. of teeth on casette" 
+                    hint="Add the number of teeth on the selected cog of the casette">
+                </app-number-input>
+            </div>
+            <div class="col-md-4">
+                <app-number-input 
+                    label="No. of teeth on chainring" 
+                    hint="Add the number of teeth on the selected front chainring">
+                </app-number-input>
+            </div>
+            <div class="col-md-4">
+                <app-button 
+                    [buttonType]="buttonTypes.FORM_SUBMIT" 
+                    buttonLabel="Calculate"
+                    (click)="calculate()">
+                </app-button>
+            </div>
+        </div>
+    </div>
+    <!-- CUSTOM MODE -->
+    <div class="inputs-custom" *ngIf="mode === inputType.Custom">
+        
+    </div>
+</div>

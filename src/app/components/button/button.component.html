@@ -1,0 +1,19 @@
+<div class="button-items">
+    <button 
+        *ngIf="buttonType === buttonTypes.NAVIGATION_ACTIVE"
+        [routerLink]="navItem.route" 
+        class="nav-button nav-active">
+    {{ navItem.linkName }}
+    </button>
+    <button 
+        *ngIf="buttonType === buttonTypes.NAVIGATION_INACTIVE"
+        [routerLink]="navItem.route"
+        class="nav-button">
+    {{ navItem.linkName }}
+    </button>
+    <button 
+        *ngIf="buttonType === buttonTypes.FORM_SUBMIT"
+        class="button-submit"
+        >{{ buttonLabel }}
+    </button>
+</div>

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NavButtonComponent } from './nav-button.component';
+import { NumberInputComponent } from './number-input.component';
 
-describe('NavButtonComponent', () => {
-  let component: NavButtonComponent;
-  let fixture: ComponentFixture<NavButtonComponent>;
+describe('NumberInputComponent', () => {
+  let component: NumberInputComponent;
+  let fixture: ComponentFixture<NumberInputComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NavButtonComponent ]
+      declarations: [ NumberInputComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NavButtonComponent);
+    fixture = TestBed.createComponent(NumberInputComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

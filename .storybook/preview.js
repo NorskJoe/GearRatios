@@ -11,4 +11,17 @@ export const parameters = {
     },
   },
   docs: { inlineStories: true },
+  backgrounds: {
+    default: 'dark',
+    values: [
+      {
+        name: 'dark',
+        value: rgb(11, 12, 16),
+      },
+      {
+        name: 'light',
+        value: rgb(197, 198, 199),
+      }
+    ]
+  }
 }

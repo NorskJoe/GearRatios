@@ -1,0 +1,5 @@
+export enum ButtonType {
+    NAVIGATION_ACTIVE,
+    NAVIGATION_INACTIVE,
+    FORM_SUBMIT
+}
