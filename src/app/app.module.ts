@@ -11,6 +11,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { UserInputsComponent } from './components/user-inputs/user-inputs.component';
 import { NumberInputComponent } from './components/number-input/number-input.component';
 import { TipComponent } from './components/tip/tip.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { TipComponent } from './components/tip/tip.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
