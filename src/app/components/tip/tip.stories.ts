@@ -1,20 +1,20 @@
 import { CommonModule } from '@angular/common';
 import { moduleMetadata, Story, Meta } from '@storybook/angular';
-import { NumberInputComponent } from './number-input.component';
+import { TipComponent } from './tip.component';
 
 export default {
-    component: NumberInputComponent,
+    component: TipComponent,
     decorators: [
         moduleMetadata({
-            declarations: [NumberInputComponent],
+            declarations: [TipComponent],
             imports: [CommonModule],
         }),
     ],
     excludeStories: /.*Data$/,
-    title: 'Number Input',
+    title: 'Tip',
 } as Meta;
 
-const Template: Story<NumberInputComponent> = args => ({
+const Template: Story<TipComponent> = args => ({
     props: {
         ...args,
     },
@@ -22,6 +22,6 @@ const Template: Story<NumberInputComponent> = args => ({
 
 export const Default = Template.bind({});
 Default.args = {
-    label: 'Input Label',
-    hint: 'Hint text',
+    visible: true,
+    text: 'My tip text',
 };

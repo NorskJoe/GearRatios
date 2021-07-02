@@ -16,11 +16,11 @@ export const parameters = {
     values: [
       {
         name: 'dark',
-        value: rgb(11, 12, 16),
+        value: '#0B0C10',
       },
       {
         name: 'light',
-        value: rgb(197, 198, 199),
+        value: '#c5c6c7',
       }
     ]
   }

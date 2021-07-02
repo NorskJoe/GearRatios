@@ -8,7 +8,11 @@ import { Component, Input } from '@angular/core';
 export class NumberInputComponent {
   @Input() label: string;
   @Input() hint: string;
+  showTip: boolean = false;
 
   constructor() { }
 
+  public openTip() {
+    this.showTip = !this.showTip;
+  }
 }

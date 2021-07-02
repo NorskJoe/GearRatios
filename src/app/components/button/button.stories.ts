@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { moduleMetadata, Story, Meta } from '@storybook/angular'
+import { moduleMetadata, Story, Meta } from '@storybook/angular';
 import { ButtonType } from 'src/app/models/button.model';
 import { ButtonComponent } from './button.component';
 

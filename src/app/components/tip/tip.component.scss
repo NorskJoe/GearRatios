@@ -1,0 +1,14 @@
+@import '../../../styles/colours.scss';
+
+.show-tip {
+    position: absolute;
+    background-color: $colour-lightgrey;
+    color: $colour-darkgrey;
+    border-radius: 8px;
+    max-width: 200px;
+    padding: 10px 10px;
+}
+
+.hide-tip {
+    display: none;
+}

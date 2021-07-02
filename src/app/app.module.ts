@@ -10,6 +10,7 @@ import { QuickCalculatorComponent } from './components/quick-calculator/quick-ca
 import { ButtonComponent } from './components/button/button.component';
 import { UserInputsComponent } from './components/user-inputs/user-inputs.component';
 import { NumberInputComponent } from './components/number-input/number-input.component';
+import { TipComponent } from './components/tip/tip.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NumberInputComponent } from './components/number-input/number-input.com
     QuickCalculatorComponent,
     ButtonComponent,
     UserInputsComponent,
-    NumberInputComponent
+    NumberInputComponent,
+    TipComponent
   ],
   imports: [
     BrowserModule,
