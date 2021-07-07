@@ -31,3 +31,8 @@ export const QuickModeInputs = Template.bind({});
 QuickModeInputs.args = {
     mode: InputMode.Quick,
 };
+
+export const CustomModeInputs = Template.bind({});
+CustomModeInputs.args = {
+    mode: InputMode.Custom,
+};
