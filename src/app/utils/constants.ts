@@ -14,3 +14,9 @@ export var NAVIGATION_LINKS = [
 ] as NavLink[];
 
 export var GITHUB_LINK = 'https://github.com/NorskJoe';
+
+export var CHAINRING_SIZES = {
+  SINGLE: 1,
+  DOUBLE: 2,
+  TRIPLE: 3,
+};

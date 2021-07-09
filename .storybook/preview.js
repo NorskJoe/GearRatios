@@ -12,7 +12,7 @@ export const parameters = {
   },
   docs: { inlineStories: true },
   backgrounds: {
-    default: 'dark',
+    default: 'light',
     values: [
       {
         name: 'dark',

@@ -1,5 +1,24 @@
 .inputs-container {
     padding: 10px 15px;
+}
+
+.inputs-quick {
     display: flex;
     justify-content: center;
+}
+
+.input-row {
+    margin: auto;
+    width: 100%;
+}
+
+.input-col-dropdown {
+    width: 20%;
+    float: left;
+}
+
+.input-col-options {
+    margin-left: 20%;
+    display: table-cell;
+    padding: 0 15px;
 }

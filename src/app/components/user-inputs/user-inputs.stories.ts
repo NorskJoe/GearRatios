@@ -29,10 +29,10 @@ const Template: Story<UserInputsComponent> = args => ({
 
 export const QuickModeInputs = Template.bind({});
 QuickModeInputs.args = {
-    mode: InputMode.Quick,
+    mode: InputMode.QUICK,
 };
 
 export const CustomModeInputs = Template.bind({});
 CustomModeInputs.args = {
-    mode: InputMode.Custom,
+    mode: InputMode.CUSTOM,
 };

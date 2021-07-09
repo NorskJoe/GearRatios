@@ -12,6 +12,7 @@ import { UserInputsComponent } from './components/user-inputs/user-inputs.compon
 import { NumberInputComponent } from './components/number-input/number-input.component';
 import { TipComponent } from './components/tip/tip.component';
 import { FormsModule } from '@angular/forms';
+import { DropdownInputComponent } from './components/dropdown-input/dropdown-input.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FormsModule } from '@angular/forms';
     ButtonComponent,
     UserInputsComponent,
     NumberInputComponent,
-    TipComponent
+    TipComponent,
+    DropdownInputComponent
   ],
   imports: [
     BrowserModule,

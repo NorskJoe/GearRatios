@@ -1,6 +1,6 @@
 <div class="inputs-container">
     <!-- QUICK MODE -->
-    <div class="inputs-quick" *ngIf="mode === inputType.Quick">
+    <div class="inputs-quick" *ngIf="mode === inputType.QUICK">
         <div class="row">
             <div class="col-md-4">
                 <app-number-input
@@ -28,15 +28,29 @@
         </div>
     </div>
     <!-- CUSTOM MODE -->
-    <div class="inputs-custom" *ngIf="mode === inputType.Custom">
-        <div class="row">
-            <div class="col-md-6">
-                <select>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="2">3</option>
-                </select>
+    <div class="inputs-custom" *ngIf="mode === inputType.CUSTOM">
+        <div class="input-row">
+            <div class="input-col-dropdown">
+                <app-dropdown-input
+                    [(ngModel)]="customCalculationValues.numberOfChainrings"
+                    ngDefaultControl
+                    [options]="[1,2,3]"
+                    label="No. of chainrings"
+                    hint="The number of large chainrings at the front of the bike">
+                </app-dropdown-input>
             </div>
+            <ng-container *ngIf="customCalculationValues.numberOfChainrings">
+                <div
+                    *ngFor="let chainring of toRange(customCalculationValues.numberOfChainrings); let i = index; let total = count;"
+                    class="input-col-options">
+                    <app-number-input
+                        [(ngModel)]="customCalculationValues.chainringSizes[i]"
+                        ngDefaultControl
+                        label="{{getChainringLabel(i+1, total)}}"
+                        hint="No. of teeth on chainring">
+                    </app-number-input>
+                </div>
+            </ng-container>
         </div>
     </div>
 </div>
