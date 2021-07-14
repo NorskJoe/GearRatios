@@ -1,3 +1,27 @@
 <div class="quick-container">   
-    <app-user-inputs [mode]="inputMode.QUICK"></app-user-inputs>
+    <div class="row">
+        <div class="col-md-4">
+            <app-number-input
+                [(ngModel)]="quickCalculationValues.rearCogSize"
+                ngDefaultControl 
+                label="No. of teeth on casette" 
+                hint="Add the number of teeth on the cog of the rear casette">
+            </app-number-input>
+        </div>
+        <div class="col-md-4">
+            <app-number-input 
+                [(ngModel)]="quickCalculationValues.chainringSize"
+                ngDefaultControl    
+                label="No. of teeth on chainring" 
+                hint="Add the number of teeth on the front chainring">
+            </app-number-input>
+        </div>
+        <div class="col-md-4">
+            <app-button 
+                [buttonType]="buttonTypes.FORM_SUBMIT" 
+                buttonLabel="Calculate"
+                (click)="calculate()">
+            </app-button>
+        </div>
+    </div>
 </div>

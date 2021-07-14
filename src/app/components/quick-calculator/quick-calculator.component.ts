@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { InputMode } from 'src/app/models/input.model';
+import { ButtonType } from 'src/app/models/button.model';
+import { QuickCalculation } from 'src/app/models/calculation.model';
 
 @Component({
   selector: 'app-quick-calculator',
@@ -7,7 +8,13 @@ import { InputMode } from 'src/app/models/input.model';
   styleUrls: ['./quick-calculator.component.scss']
 })
 export class QuickCalculatorComponent {
-  inputMode = InputMode;
+  quickCalculationValues: QuickCalculation = {};
+  buttonTypes = ButtonType;
   constructor() { }
+
+  public calculate() {
+    console.log('rear cog: ', this.quickCalculationValues.rearCogSize);
+    console.log('chainringSize: ', this.quickCalculationValues.chainringSize);
+  }
 
 }
