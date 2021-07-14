@@ -13,6 +13,8 @@ import { NumberInputComponent } from './components/number-input/number-input.com
 import { TipComponent } from './components/tip/tip.component';
 import { FormsModule } from '@angular/forms';
 import { DropdownInputComponent } from './components/dropdown-input/dropdown-input.component';
+import { NgxSliderModule } from '@angular-slider/ngx-slider';
+import { SliderInputComponent } from './components/slider-input/slider-input.component';
 
 @NgModule({
   declarations: [
@@ -25,14 +27,16 @@ import { DropdownInputComponent } from './components/dropdown-input/dropdown-inp
     UserInputsComponent,
     NumberInputComponent,
     TipComponent,
-    DropdownInputComponent
+    DropdownInputComponent,
+    SliderInputComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgxSliderModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

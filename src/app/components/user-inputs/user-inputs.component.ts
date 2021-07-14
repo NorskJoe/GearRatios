@@ -1,8 +1,9 @@
+import { Options } from '@angular-slider/ngx-slider';
 import { Component, Input, OnInit } from '@angular/core';
 import { ButtonType } from 'src/app/models/button.model';
 import { CustomCalculation, QuickCalculation } from 'src/app/models/calculation.model';
 import { InputMode } from 'src/app/models/input.model';
-import { CHAINRING_SIZES } from 'src/app/utils/constants';
+import { CHAINRING_SIZES, COG_SIZES } from 'src/app/utils/constants';
 
 @Component({
   selector: 'app-user-inputs',
@@ -13,21 +14,23 @@ export class UserInputsComponent implements OnInit {
   @Input() mode: InputMode;
   inputType = InputMode;
   buttonTypes = ButtonType;
-  quickCalculationValues: QuickCalculation;
-  customCalculationValues: CustomCalculation;
+  cogSizes = COG_SIZES;
+  quickCalculationValues: QuickCalculation = { };
+  customCalculationValues: CustomCalculation = {
+    chainringSizes: [],
+    minCasetteSpeed: COG_SIZES.SMALLEST,
+    maxCasetteSpeed: COG_SIZES.LARGEST,
+  };
+
+  value: number = 50;
+  highValue: number = 150;
+  options: Options = {
+    floor: 0,
+    ceil: 200
+  };
   constructor() { }
 
   ngOnInit(): void {
-    switch (this.mode) {
-      case this.inputType.QUICK:
-        this.quickCalculationValues = {};
-        break;
-      case this.inputType.CUSTOM:
-        this.customCalculationValues = {
-          chainringSizes: [],
-        };
-        break;
-    }
   }
 
   public toRange(i: number): number[] {
@@ -65,5 +68,12 @@ export class UserInputsComponent implements OnInit {
   public quickCalculate() {
     console.log('rear cog: ', this.quickCalculationValues.rearCogSize);
     console.log('chainringSize: ', this.quickCalculationValues.chainringSize);
+  }
+
+  public customCalculate() {
+    console.log('number of chainrings: ', this.customCalculationValues.numberOfChainrings);
+    console.log('sizes of chainrings: ', this.customCalculationValues.chainringSizes);
+    console.log('min casette: ', this.customCalculationValues.minCasetteSpeed);
+    console.log('max casette: ', this.customCalculationValues.maxCasetteSpeed);
   }
 }

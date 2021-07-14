@@ -3,10 +3,10 @@
     "interfaces": [
         {
             "name": "CustomCalculation",
-            "id": "interface-CustomCalculation-7102704cb9252f6997b7ee0e8161b11f",
+            "id": "interface-CustomCalculation-2854006ab8fbd4d7b83fe1a237bd7cb5",
             "file": "src/app/models/calculation.model.ts",
             "type": "interface",
-            "sourceCode": "export interface QuickCalculation {\r\n    chainringSize?: number;\r\n    rearCogSize?: number;\r\n}\r\n\r\nexport interface CustomCalculation {\r\n    numberOfChainrings?: number;\r\n    chainringSizes?: number[];\r\n    casetteSpeed?: number;\r\n    minCasetteSpeed?: number;\r\n    maxCasetteSpeed?: number;\r\n}",
+            "sourceCode": "export interface QuickCalculation {\r\n    chainringSize?: number;\r\n    rearCogSize?: number;\r\n}\r\n\r\nexport interface CustomCalculation {\r\n    numberOfChainrings?: number;\r\n    chainringSizes: number[];\r\n    casetteSpeed?: number;\r\n    minCasetteSpeed: number;\r\n    maxCasetteSpeed: number;\r\n}",
             "properties": [
                 {
                     "name": "casetteSpeed",
@@ -18,21 +18,21 @@
                 {
                     "name": "chainringSizes",
                     "type": "number[]",
-                    "optional": true,
+                    "optional": false,
                     "description": "",
                     "line": 8
                 },
                 {
                     "name": "maxCasetteSpeed",
                     "type": "number",
-                    "optional": true,
+                    "optional": false,
                     "description": "",
                     "line": 11
                 },
                 {
                     "name": "minCasetteSpeed",
                     "type": "number",
-                    "optional": true,
+                    "optional": false,
                     "description": "",
                     "line": 10
                 },
@@ -83,10 +83,10 @@
         },
         {
             "name": "QuickCalculation",
-            "id": "interface-QuickCalculation-7102704cb9252f6997b7ee0e8161b11f",
+            "id": "interface-QuickCalculation-2854006ab8fbd4d7b83fe1a237bd7cb5",
             "file": "src/app/models/calculation.model.ts",
             "type": "interface",
-            "sourceCode": "export interface QuickCalculation {\r\n    chainringSize?: number;\r\n    rearCogSize?: number;\r\n}\r\n\r\nexport interface CustomCalculation {\r\n    numberOfChainrings?: number;\r\n    chainringSizes?: number[];\r\n    casetteSpeed?: number;\r\n    minCasetteSpeed?: number;\r\n    maxCasetteSpeed?: number;\r\n}",
+            "sourceCode": "export interface QuickCalculation {\r\n    chainringSize?: number;\r\n    rearCogSize?: number;\r\n}\r\n\r\nexport interface CustomCalculation {\r\n    numberOfChainrings?: number;\r\n    chainringSizes: number[];\r\n    casetteSpeed?: number;\r\n    minCasetteSpeed: number;\r\n    maxCasetteSpeed: number;\r\n}",
             "properties": [
                 {
                     "name": "chainringSize",
@@ -108,50 +108,7 @@
             "methods": []
         }
     ],
-    "injectables": [
-        {
-            "name": "NumberService",
-            "id": "injectable-NumberService-20544ff40f737c631280e4fe1610bddb",
-            "file": "src/app/services/number.service.ts",
-            "properties": [],
-            "methods": [
-                {
-                    "name": "ToRange",
-                    "args": [
-                        {
-                            "name": "i",
-                            "type": "number | undefined"
-                        }
-                    ],
-                    "optional": false,
-                    "returnType": "number[]",
-                    "typeParameters": [],
-                    "line": 7,
-                    "modifierKind": [
-                        115
-                    ],
-                    "jsdoctags": [
-                        {
-                            "name": "i",
-                            "type": "number | undefined",
-                            "tagName": {
-                                "text": "param"
-                            }
-                        }
-                    ]
-                }
-            ],
-            "description": "",
-            "sourceCode": "import { Injectable } from '@angular/core';\r\n\r\n@Injectable()\r\nexport class NumberService {\r\n   constructor() {}\r\n\r\n   public static ToRange(i: number | undefined): number[] {\r\n       if (i) {\r\n           return new Array<number>(i);\r\n       } else {\r\n           return new Array<number>(0);\r\n       }\r\n   }\r\n}",
-            "constructorObj": {
-                "name": "constructor",
-                "description": "",
-                "args": [],
-                "line": 4
-            },
-            "type": "injectable"
-        }
-    ],
+    "injectables": [],
     "classes": [],
     "directives": [],
     "components": [
@@ -323,11 +280,11 @@
                 "args": [],
                 "line": 10
             },
-            "templateData": "<div class=\"custom-container\">\r\n    <app-user-inputs [mode]=\"inputMode.Custom\"></app-user-inputs>\r\n</div>\r\n"
+            "templateData": "<div class=\"custom-container\">\r\n    <app-user-inputs [mode]=\"inputMode.CUSTOM\"></app-user-inputs>\r\n</div>\r\n"
         },
         {
             "name": "DropdownInputComponent",
-            "id": "component-DropdownInputComponent-49c296b8da76b353d512a6a663a38acd",
+            "id": "component-DropdownInputComponent-07968388d941020ce1738a606688e60c",
             "file": "src/app/components/dropdown-input/dropdown-input.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -345,21 +302,43 @@
             "viewProviders": [],
             "inputsClass": [
                 {
+                    "name": "hint",
+                    "line": 11,
+                    "type": "string"
+                },
+                {
+                    "name": "label",
+                    "line": 10,
+                    "type": "string"
+                },
+                {
                     "name": "options",
                     "line": 9,
                     "type": "any[]"
                 }
             ],
             "outputsClass": [],
-            "propertiesClass": [],
+            "propertiesClass": [
+                {
+                    "name": "showTip",
+                    "defaultValue": "false",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
+                }
+            ],
             "methodsClass": [
                 {
-                    "name": "ngOnInit",
+                    "name": "openTip",
                     "args": [],
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 12
+                    "line": 16,
+                    "modifierKind": [
+                        114
+                    ]
                 }
             ],
             "hostBindings": [],
@@ -367,11 +346,11 @@
             "description": "",
             "rawdescription": "",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-dropdown-input',\n  templateUrl: './dropdown-input.component.html',\n  styleUrls: ['./dropdown-input.component.scss']\n})\nexport class DropdownInputComponent implements OnInit {\n  @Input() options: any[];\n  constructor() { }\n\n  ngOnInit(): void {\n    \n  }\n\n}\n",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-dropdown-input',\n  templateUrl: './dropdown-input.component.html',\n  styleUrls: ['./dropdown-input.component.scss']\n})\nexport class DropdownInputComponent {\n  @Input() options: any[];\n  @Input() label: string;\n  @Input() hint: string;\n  showTip: boolean = false;\n\n  constructor() { }\n\n  public openTip() {\n    this.showTip = !this.showTip;\n  }\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "",
+                    "data": ".input-select {\r\n  text-align: center;\r\n  max-width: 100px;\r\n  margin: 0 auto;\r\n}",
                     "styleUrl": "./dropdown-input.component.scss"
                 }
             ],
@@ -380,12 +359,9 @@
                 "name": "constructor",
                 "description": "",
                 "args": [],
-                "line": 9
+                "line": 12
             },
-            "implements": [
-                "OnInit"
-            ],
-            "templateData": "<select>\n    <option *ngFor=\"let option of options\">\n        {{ option }}\n    </option>\n</select>\n"
+            "templateData": "<label class=\"input-label\">\n    {{ label }}\n    <span \n    class=\"tip-icon\"\n    (click)=\"openTip()\">\n    <i class=\"bi bi-question-circle-fill\"></i>\n</span>\n</label>\n<app-tip [visible]=\"showTip\" [text]=\"hint\"></app-tip>\n<br/>\n<select class=\"form-select input-select\">\n    <option></option>\n    <option *ngFor=\"let option of options\">\n        {{ option }}\n    </option>\n</select>"
         },
         {
             "name": "FooterComponent",
@@ -596,7 +572,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".tip-icon {\r\n    font-size: 18px;\r\n    :hover {\r\n        cursor: pointer;\r\n    }\r\n}",
+                    "data": ".tip-icon {\r\n  font-size: 18px;\r\n  :hover {\r\n    cursor: pointer;\r\n  }\r\n}\r\n\r\n.input-number {\r\n  text-align: center;\r\n  max-width: 100px;\r\n  margin: 0 auto;\r\n}\r\n",
                     "styleUrl": "./number-input.component.scss"
                 }
             ],
@@ -607,7 +583,7 @@
                 "args": [],
                 "line": 11
             },
-            "templateData": "<label class=\"input-label\">\r\n    {{ label }}\r\n    <span \r\n    class=\"tip-icon\"\r\n    (click)=\"openTip()\">\r\n    <i class=\"bi bi-question-circle-fill\"></i>\r\n</span>\r\n</label>\r\n<app-tip [visible]=\"showTip\" [text]=\"hint\"></app-tip>\r\n<input class=\"input-number form-control\" type=\"number\" max=\"100\" />"
+            "templateData": "<label class=\"input-label\">\r\n    {{ label }}\r\n    <span \r\n        class=\"tip-icon\"\r\n        (click)=\"openTip()\">\r\n        <i class=\"bi bi-question-circle-fill\"></i>\r\n    </span>\r\n</label>\r\n<app-tip [visible]=\"showTip\" [text]=\"hint\"></app-tip>\r\n<input class=\"input-number form-control\" type=\"number\" max=\"100\" />"
         },
         {
             "name": "QuickCalculatorComponent",
@@ -660,7 +636,145 @@
                 "args": [],
                 "line": 10
             },
-            "templateData": "<div class=\"quick-container\">   \r\n    <app-user-inputs [mode]=\"inputMode.Quick\"></app-user-inputs>\r\n</div>"
+            "templateData": "<div class=\"quick-container\">   \r\n    <app-user-inputs [mode]=\"inputMode.QUICK\"></app-user-inputs>\r\n</div>"
+        },
+        {
+            "name": "SliderInputComponent",
+            "id": "component-SliderInputComponent-46b8e29025368028d38aacc5b988fe1f",
+            "file": "src/app/components/slider-input/slider-input.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-slider-input",
+            "styleUrls": [
+                "./slider-input.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./slider-input.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "hint",
+                    "line": 15,
+                    "type": "string"
+                },
+                {
+                    "name": "label",
+                    "line": 14,
+                    "type": "string"
+                },
+                {
+                    "name": "maxRange",
+                    "line": 10,
+                    "type": "number"
+                },
+                {
+                    "name": "maxValue",
+                    "line": 13,
+                    "type": "number"
+                },
+                {
+                    "name": "minRange",
+                    "line": 11,
+                    "type": "number"
+                },
+                {
+                    "name": "minValue",
+                    "line": 12,
+                    "type": "number"
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "maxValueChange",
+                    "defaultValue": "new EventEmitter<number>()",
+                    "line": 17,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "minValueChange",
+                    "defaultValue": "new EventEmitter<number>()",
+                    "line": 16,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [
+                {
+                    "name": "options",
+                    "type": "Options",
+                    "optional": false,
+                    "description": "",
+                    "line": 18
+                },
+                {
+                    "name": "showTip",
+                    "defaultValue": "false",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 24
+                },
+                {
+                    "name": "openTip",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 36,
+                    "modifierKind": [
+                        114
+                    ]
+                },
+                {
+                    "name": "updateValues",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 31,
+                    "modifierKind": [
+                        114
+                    ]
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Options } from '@angular-slider/ngx-slider';\r\nimport { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-slider-input',\r\n  templateUrl: './slider-input.component.html',\r\n  styleUrls: ['./slider-input.component.scss']\r\n})\r\nexport class SliderInputComponent implements OnInit {\r\n  @Input() maxRange: number;\r\n  @Input() minRange: number;\r\n  @Input() minValue: number;\r\n  @Input() maxValue: number;\r\n  @Input() label: string;\r\n  @Input() hint: string;\r\n  @Output() minValueChange = new EventEmitter<number>();\r\n  @Output() maxValueChange = new EventEmitter<number>();\r\n  options: Options;\r\n  showTip: boolean = false;\r\n\r\n  constructor() { }\r\n\r\n  \r\n  ngOnInit(): void {\r\n    this.options = {\r\n      floor: this.minRange,\r\n      ceil: this.maxRange,\r\n    };\r\n  }\r\n\r\n  public updateValues() {\r\n    this.minValueChange.emit(this.minValue);\r\n    this.maxValueChange.emit(this.maxValue);\r\n  }\r\n\r\n  public openTip() {\r\n    this.showTip = !this.showTip;\r\n  }\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./slider-input.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [],
+                "line": 19
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<label class=\"input-label\">\r\n    {{ label }}\r\n    <span \r\n    class=\"tip-icon\"\r\n    (click)=\"openTip()\">\r\n    <i class=\"bi bi-question-circle-fill\"></i>\r\n</span>\r\n</label>\r\n<app-tip [visible]=\"showTip\" [text]=\"hint\"></app-tip>\r\n<ngx-slider\r\n    [(value)]=\"minValue\"\r\n    [(highValue)]=\"maxValue\"\r\n    [options]=\"options\"\r\n    (valueChange)=\"updateValues()\"\r\n    (highValueChange)=\"updateValues()\">\r\n</ngx-slider>"
         },
         {
             "name": "TipComponent",
@@ -719,7 +833,7 @@
         },
         {
             "name": "UserInputsComponent",
-            "id": "component-UserInputsComponent-431f547670143fc3862972fadfe818cd",
+            "id": "component-UserInputsComponent-fb6af85bd8f69836ad9423a9b8b694cf",
             "file": "src/app/components/user-inputs/user-inputs.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -738,7 +852,7 @@
             "inputsClass": [
                 {
                     "name": "mode",
-                    "line": 13,
+                    "line": 14,
                     "type": "InputMode"
                 }
             ],
@@ -750,14 +864,31 @@
                     "type": "",
                     "optional": false,
                     "description": "",
-                    "line": 15
+                    "line": 16
                 },
                 {
-                    "name": "customCalculationValues",
-                    "type": "CustomCalculation",
+                    "name": "cogSizes",
+                    "defaultValue": "COG_SIZES",
+                    "type": "",
                     "optional": false,
                     "description": "",
                     "line": 17
+                },
+                {
+                    "name": "customCalculationValues",
+                    "defaultValue": "{\r\n    chainringSizes: [],\r\n    minCasetteSpeed: COG_SIZES.SMALLEST,\r\n    maxCasetteSpeed: COG_SIZES.LARGEST,\r\n  }",
+                    "type": "CustomCalculation",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                },
+                {
+                    "name": "highValue",
+                    "defaultValue": "150",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 26
                 },
                 {
                     "name": "inputType",
@@ -765,32 +896,88 @@
                     "type": "",
                     "optional": false,
                     "description": "",
-                    "line": 14
+                    "line": 15
+                },
+                {
+                    "name": "options",
+                    "defaultValue": "{\r\n    floor: 0,\r\n    ceil: 200\r\n  }",
+                    "type": "Options",
+                    "optional": false,
+                    "description": "",
+                    "line": 27
                 },
                 {
                     "name": "quickCalculationValues",
+                    "defaultValue": "{ }",
                     "type": "QuickCalculation",
                     "optional": false,
                     "description": "",
-                    "line": 16
+                    "line": 18
                 },
                 {
-                    "name": "toRange",
-                    "defaultValue": "NumberService.ToRange",
-                    "type": "",
+                    "name": "value",
+                    "defaultValue": "50",
+                    "type": "number",
                     "optional": false,
                     "description": "",
-                    "line": 18
+                    "line": 25
                 }
             ],
             "methodsClass": [
+                {
+                    "name": "customCalculate",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 73,
+                    "modifierKind": [
+                        114
+                    ]
+                },
+                {
+                    "name": "getChainringLabel",
+                    "args": [
+                        {
+                            "name": "current",
+                            "type": "number"
+                        },
+                        {
+                            "name": "total",
+                            "type": "number"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 44,
+                    "modifierKind": [
+                        114
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "current",
+                            "type": "number",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "total",
+                            "type": "number",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
                 {
                     "name": "ngOnInit",
                     "args": [],
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 21
+                    "line": 33
                 },
                 {
                     "name": "quickCalculate",
@@ -798,7 +985,35 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 32
+                    "line": 68,
+                    "modifierKind": [
+                        114
+                    ]
+                },
+                {
+                    "name": "toRange",
+                    "args": [
+                        {
+                            "name": "i",
+                            "type": "number"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "number[]",
+                    "typeParameters": [],
+                    "line": 36,
+                    "modifierKind": [
+                        114
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "i",
+                            "type": "number",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
                 }
             ],
             "hostBindings": [],
@@ -806,11 +1021,11 @@
             "description": "",
             "rawdescription": "",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\nimport { ButtonType } from 'src/app/models/button.model';\r\nimport { CustomCalculation, QuickCalculation } from 'src/app/models/calculation.model';\r\nimport { InputMode } from 'src/app/models/input.model';\r\nimport { NumberService } from 'src/app/services/number.service';\r\n\r\n@Component({\r\n  selector: 'app-user-inputs',\r\n  templateUrl: './user-inputs.component.html',\r\n  styleUrls: ['./user-inputs.component.scss']\r\n})\r\nexport class UserInputsComponent implements OnInit {\r\n  @Input() mode: InputMode;\r\n  inputType = InputMode;\r\n  buttonTypes = ButtonType;\r\n  quickCalculationValues: QuickCalculation;\r\n  customCalculationValues: CustomCalculation;\r\n  toRange = NumberService.ToRange;\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n    switch (this.mode) {\r\n      case this.inputType.Quick:\r\n        this.quickCalculationValues = {};\r\n        break;\r\n      case this.inputType.Custom:\r\n        this.customCalculationValues = {};\r\n        break;\r\n    }\r\n  }\r\n\r\n  quickCalculate() {\r\n    console.log('rear cog: ', this.quickCalculationValues.rearCogSize);\r\n    console.log('chainringSize: ', this.quickCalculationValues.chainringSize);\r\n  }\r\n\r\n}\r\n",
+            "sourceCode": "import { Options } from '@angular-slider/ngx-slider';\r\nimport { Component, Input, OnInit } from '@angular/core';\r\nimport { ButtonType } from 'src/app/models/button.model';\r\nimport { CustomCalculation, QuickCalculation } from 'src/app/models/calculation.model';\r\nimport { InputMode } from 'src/app/models/input.model';\r\nimport { CHAINRING_SIZES, COG_SIZES } from 'src/app/utils/constants';\r\n\r\n@Component({\r\n  selector: 'app-user-inputs',\r\n  templateUrl: './user-inputs.component.html',\r\n  styleUrls: ['./user-inputs.component.scss']\r\n})\r\nexport class UserInputsComponent implements OnInit {\r\n  @Input() mode: InputMode;\r\n  inputType = InputMode;\r\n  buttonTypes = ButtonType;\r\n  cogSizes = COG_SIZES;\r\n  quickCalculationValues: QuickCalculation = { };\r\n  customCalculationValues: CustomCalculation = {\r\n    chainringSizes: [],\r\n    minCasetteSpeed: COG_SIZES.SMALLEST,\r\n    maxCasetteSpeed: COG_SIZES.LARGEST,\r\n  };\r\n\r\n  value: number = 50;\r\n  highValue: number = 150;\r\n  options: Options = {\r\n    floor: 0,\r\n    ceil: 200\r\n  };\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n  public toRange(i: number): number[] {\r\n    if (i) {\r\n      return new Array(+i);\r\n    } else {\r\n        return new Array(0);\r\n    }\r\n  }\r\n\r\n  public getChainringLabel(current: number, total: number): string {\r\n    let size = '';\r\n    \r\n    switch (current) {\r\n      case CHAINRING_SIZES.SINGLE:\r\n        if (total > CHAINRING_SIZES.SINGLE) {\r\n          size = 'smallest';\r\n        }\r\n        break;\r\n      case CHAINRING_SIZES.DOUBLE:\r\n        if (total === CHAINRING_SIZES.DOUBLE) {\r\n          size = 'largest';\r\n        } else {\r\n          size = 'middle';\r\n        }\r\n        break;\r\n      case CHAINRING_SIZES.TRIPLE:\r\n        size = 'largest';\r\n        break;\r\n    }\r\n\r\n    return `No. of teeth on the ${size} chainring`;\r\n  }\r\n\r\n  public quickCalculate() {\r\n    console.log('rear cog: ', this.quickCalculationValues.rearCogSize);\r\n    console.log('chainringSize: ', this.quickCalculationValues.chainringSize);\r\n  }\r\n\r\n  public customCalculate() {\r\n    console.log('number of chainrings: ', this.customCalculationValues.numberOfChainrings);\r\n    console.log('sizes of chainrings: ', this.customCalculationValues.chainringSizes);\r\n    console.log('min casette: ', this.customCalculationValues.minCasetteSpeed);\r\n    console.log('max casette: ', this.customCalculationValues.maxCasetteSpeed);\r\n  }\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".inputs-container {\r\n    padding: 10px 15px;\r\n    display: flex;\r\n    justify-content: center;\r\n}",
+                    "data": ".inputs-container {\r\n    padding: 10px 15px;\r\n}\r\n\r\n.inputs-quick {\r\n    display: flex;\r\n    justify-content: center;\r\n}\r\n\r\n.input-row {\r\n    margin: auto;\r\n    width: 100%;\r\n    padding-bottom: 30px;\r\n}\r\n\r\n.input-col-dropdown {\r\n    float: left;\r\n}\r\n\r\n.input-col-options {\r\n    padding: 0 30px;\r\n    width: 300px;\r\n}\r\n\r\n.number-input-row {\r\n    display: flex;\r\n    justify-content: center;\r\n}\r\n\r\n.inputs-custom {\r\n    display: grid;\r\n    margin: 5px 20px;\r\n}",
                     "styleUrl": "./user-inputs.component.scss"
                 }
             ],
@@ -819,12 +1034,12 @@
                 "name": "constructor",
                 "description": "",
                 "args": [],
-                "line": 18
+                "line": 30
             },
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div class=\"inputs-container\">\r\n    <!-- QUICK MODE -->\r\n    <div class=\"inputs-quick\" *ngIf=\"mode === inputType.Quick\">\r\n        <div class=\"row\">\r\n            <div class=\"col-md-4\">\r\n                <app-number-input\r\n                    [(ngModel)]=\"quickCalculationValues.rearCogSize\"\r\n                    ngDefaultControl \r\n                    label=\"No. of teeth on casette\" \r\n                    hint=\"Add the number of teeth on the cog of the rear casette\">\r\n                </app-number-input>\r\n            </div>\r\n            <div class=\"col-md-4\">\r\n                <app-number-input \r\n                    [(ngModel)]=\"quickCalculationValues.chainringSize\"\r\n                    ngDefaultControl    \r\n                    label=\"No. of teeth on chainring\" \r\n                    hint=\"Add the number of teeth on the front chainring\">\r\n                </app-number-input>\r\n            </div>\r\n            <div class=\"col-md-4\">\r\n                <app-button \r\n                    [buttonType]=\"buttonTypes.FORM_SUBMIT\" \r\n                    buttonLabel=\"Calculate\"\r\n                    (click)=\"quickCalculate()\">\r\n                </app-button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <!-- CUSTOM MODE -->\r\n    <div class=\"inputs-custom\" *ngIf=\"mode === inputType.Custom\">\r\n        <div class=\"row\">\r\n            <div class=\"col-md-6\">\r\n                <app-dropdown-input\r\n                    [(ngModel)]=\"customCalculationValues.numberOfChainrings\"\r\n                    ngDefaultControl\r\n                    [options]=\"[1,2,3]\"\r\n                    label=\"No. of chainrings\"\r\n                    hint=\"The number of large chainrings at the front of the bike\">\r\n                </app-dropdown-input>\r\n                <div\r\n                    *ngFor=\"let chainring of toRange(customCalculationValues.numberOfChainrings); let i = index;\"\r\n                    class=\"col-md-2\">\r\n                    <!-- <app-number-input></app-number-input> -->\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+            "templateData": "<div class=\"inputs-container\">\r\n    <!-- QUICK MODE -->\r\n    <div class=\"inputs-quick\" *ngIf=\"mode === inputType.QUICK\">\r\n        <div class=\"row\">\r\n            <div class=\"col-md-4\">\r\n                <app-number-input\r\n                    [(ngModel)]=\"quickCalculationValues.rearCogSize\"\r\n                    ngDefaultControl \r\n                    label=\"No. of teeth on casette\" \r\n                    hint=\"Add the number of teeth on the cog of the rear casette\">\r\n                </app-number-input>\r\n            </div>\r\n            <div class=\"col-md-4\">\r\n                <app-number-input \r\n                    [(ngModel)]=\"quickCalculationValues.chainringSize\"\r\n                    ngDefaultControl    \r\n                    label=\"No. of teeth on chainring\" \r\n                    hint=\"Add the number of teeth on the front chainring\">\r\n                </app-number-input>\r\n            </div>\r\n            <div class=\"col-md-4\">\r\n                <app-button \r\n                    [buttonType]=\"buttonTypes.FORM_SUBMIT\" \r\n                    buttonLabel=\"Calculate\"\r\n                    (click)=\"quickCalculate()\">\r\n                </app-button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <!-- CUSTOM MODE -->\r\n    <div class=\"inputs-custom\" *ngIf=\"mode === inputType.CUSTOM\">\r\n        <div class=\"input-row\">\r\n            <div class=\"input-col-dropdown\">\r\n                <app-dropdown-input\r\n                    [(ngModel)]=\"customCalculationValues.numberOfChainrings\"\r\n                    ngDefaultControl\r\n                    [options]=\"[1,2,3]\"\r\n                    label=\"No. of chainrings\"\r\n                    hint=\"The number of large chainrings at the front of the bike\">\r\n                </app-dropdown-input>\r\n            </div>\r\n            <ng-container *ngIf=\"customCalculationValues.numberOfChainrings\">\r\n                <div class=\"number-input-row\">\r\n                    <div\r\n                        *ngFor=\"let chainring of toRange(customCalculationValues.numberOfChainrings); let i = index; let total = count;\"\r\n                        class=\"input-col-options\">\r\n                        <app-number-input\r\n                            [(ngModel)]=\"customCalculationValues.chainringSizes[i]\"\r\n                            ngDefaultControl\r\n                            label=\"{{getChainringLabel(i+1, total)}}\"\r\n                            hint=\"No. of teeth on chainring\">\r\n                        </app-number-input>\r\n                    </div>\r\n                </div>\r\n            </ng-container>\r\n        </div>\r\n        <div class=\"row\">\r\n            <app-slider-input\r\n                class=\"col-md-10\"\r\n                label=\"No. of teeth on smallest and largest cogs\"\r\n                hint=\"Select the no. of teeth on smallest and largest cogs on the casette\"\r\n                [maxRange]=\"cogSizes.LARGEST\"\r\n                [minRange]=\"cogSizes.SMALLEST\"\r\n                [(minValue)]=\"customCalculationValues.minCasetteSpeed\"\r\n                [(maxValue)]=\"customCalculationValues.maxCasetteSpeed\">\r\n            </app-slider-input>\r\n            <app-button \r\n                class=\"col-md-2\"\r\n                [buttonType]=\"buttonTypes.FORM_SUBMIT\" \r\n                buttonLabel=\"Calculate\"\r\n                (click)=\"customCalculate()\">\r\n            </app-button>\r\n        </div>\r\n    </div>\r\n</div>"
         }
     ],
     "modules": [
@@ -861,6 +1076,9 @@
                         },
                         {
                             "name": "QuickCalculatorComponent"
+                        },
+                        {
+                            "name": "SliderInputComponent"
                         },
                         {
                             "name": "TipComponent"
@@ -937,6 +1155,22 @@
                 "defaultValue": "Template.bind({})"
             },
             {
+                "name": "CHAINRING_SIZES",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/utils/constants.ts",
+                "type": "object",
+                "defaultValue": "{\r\n  SINGLE: 1,\r\n  DOUBLE: 2,\r\n  TRIPLE: 3,\r\n}"
+            },
+            {
+                "name": "COG_SIZES",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/utils/constants.ts",
+                "type": "object",
+                "defaultValue": "{\r\n  SMALLEST: 10,\r\n  LARGEST: 46,\r\n}"
+            },
+            {
                 "name": "context",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -972,6 +1206,14 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/app/components/number-input/number-input.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/app/components/tip/tip.stories.ts",
                 "type": "",
                 "defaultValue": "Template.bind({})"
@@ -980,7 +1222,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/number-input/number-input.stories.ts",
+                "file": "src/app/components/slider-input/slider-inputs.stories.ts",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -1083,14 +1325,6 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/tip/tip.stories.ts",
-                "type": "Story<TipComponent>",
-                "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/components/number-input/number-input.stories.ts",
                 "type": "Story<NumberInputComponent>",
                 "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
@@ -1099,8 +1333,24 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/app/components/tip/tip.stories.ts",
+                "type": "Story<TipComponent>",
+                "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/app/components/user-inputs/user-inputs.stories.ts",
                 "type": "Story<UserInputsComponent>",
+                "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/slider-input/slider-inputs.stories.ts",
+                "type": "Story<SliderInputComponent>",
                 "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
             }
         ],
@@ -1129,11 +1379,11 @@
                 "name": "InputMode",
                 "childs": [
                     {
-                        "name": "Quick",
+                        "name": "QUICK",
                         "value": "1"
                     },
                     {
-                        "name": "Custom",
+                        "name": "CUSTOM",
                         "value": "2"
                     }
                 ],
@@ -1176,6 +1426,40 @@
                     "file": "src/app/components/button/button.stories.ts",
                     "type": "Story<ButtonComponent>",
                     "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
+                }
+            ],
+            "src/app/utils/constants.ts": [
+                {
+                    "name": "CHAINRING_SIZES",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/utils/constants.ts",
+                    "type": "object",
+                    "defaultValue": "{\r\n  SINGLE: 1,\r\n  DOUBLE: 2,\r\n  TRIPLE: 3,\r\n}"
+                },
+                {
+                    "name": "COG_SIZES",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/utils/constants.ts",
+                    "type": "object",
+                    "defaultValue": "{\r\n  SMALLEST: 10,\r\n  LARGEST: 46,\r\n}"
+                },
+                {
+                    "name": "GITHUB_LINK",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/utils/constants.ts",
+                    "type": "string",
+                    "defaultValue": "'https://github.com/NorskJoe'"
+                },
+                {
+                    "name": "NAVIGATION_LINKS",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/utils/constants.ts",
+                    "type": "",
+                    "defaultValue": "[\r\n    {\r\n      isActive: true,\r\n      linkName: 'Custom Mode',\r\n      route: ['/custom']\r\n    },\r\n    {\r\n      isActive: false,\r\n      linkName: 'Quick Mode',\r\n      route: ['/quick']\r\n    }\r\n] as NavLink[]"
                 }
             ],
             "src/test.ts": [
@@ -1265,6 +1549,24 @@
                     "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
                 }
             ],
+            "src/app/components/number-input/number-input.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/number-input/number-input.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/number-input/number-input.stories.ts",
+                    "type": "Story<NumberInputComponent>",
+                    "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
+                }
+            ],
             "src/app/components/tip/tip.stories.ts": [
                 {
                     "name": "Default",
@@ -1283,12 +1585,12 @@
                     "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
                 }
             ],
-            "src/app/components/number-input/number-input.stories.ts": [
+            "src/app/components/slider-input/slider-inputs.stories.ts": [
                 {
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/number-input/number-input.stories.ts",
+                    "file": "src/app/components/slider-input/slider-inputs.stories.ts",
                     "type": "",
                     "defaultValue": "Template.bind({})"
                 },
@@ -1296,8 +1598,8 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/components/number-input/number-input.stories.ts",
-                    "type": "Story<NumberInputComponent>",
+                    "file": "src/app/components/slider-input/slider-inputs.stories.ts",
+                    "type": "Story<SliderInputComponent>",
                     "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
                 }
             ],
@@ -1319,24 +1621,6 @@
                     "file": "src/environments/environment.ts",
                     "type": "object",
                     "defaultValue": "{\n  production: false\n}"
-                }
-            ],
-            "src/app/utils/constants.ts": [
-                {
-                    "name": "GITHUB_LINK",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/utils/constants.ts",
-                    "type": "string",
-                    "defaultValue": "'https://github.com/NorskJoe'"
-                },
-                {
-                    "name": "NAVIGATION_LINKS",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/utils/constants.ts",
-                    "type": "",
-                    "defaultValue": "[\r\n    {\r\n      isActive: true,\r\n      linkName: 'Custom Mode',\r\n      route: ['/custom']\r\n    },\r\n    {\r\n      isActive: false,\r\n      linkName: 'Quick Mode',\r\n      route: ['/quick']\r\n    }\r\n] as NavLink[]"
                 }
             ]
         },
@@ -1367,11 +1651,11 @@
                     "name": "InputMode",
                     "childs": [
                         {
-                            "name": "Quick",
+                            "name": "QUICK",
                             "value": "1"
                         },
                         {
-                            "name": "Custom",
+                            "name": "CUSTOM",
                             "value": "2"
                         }
                     ],
@@ -1494,7 +1778,7 @@
                 "linktype": "component",
                 "name": "DropdownInputComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/4",
+                "coverageCount": "0/7",
                 "status": "low"
             },
             {
@@ -1604,6 +1888,35 @@
                 "status": "low"
             },
             {
+                "filePath": "src/app/components/slider-input/slider-input.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "SliderInputComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/15",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/slider-input/slider-inputs.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/slider-input/slider-inputs.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/app/components/tip/tip.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -1638,7 +1951,7 @@
                 "linktype": "component",
                 "name": "UserInputsComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/10",
+                "coverageCount": "0/16",
                 "status": "low"
             },
             {
@@ -1699,12 +2012,23 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/services/number.service.ts",
-                "type": "injectable",
-                "linktype": "injectable",
-                "name": "NumberService",
+                "filePath": "src/app/utils/constants.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "CHAINRING_SIZES",
                 "coveragePercent": 0,
-                "coverageCount": "0/3",
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/utils/constants.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "COG_SIZES",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {

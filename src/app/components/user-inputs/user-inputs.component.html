@@ -40,17 +40,36 @@
                 </app-dropdown-input>
             </div>
             <ng-container *ngIf="customCalculationValues.numberOfChainrings">
-                <div
-                    *ngFor="let chainring of toRange(customCalculationValues.numberOfChainrings); let i = index; let total = count;"
-                    class="input-col-options">
-                    <app-number-input
-                        [(ngModel)]="customCalculationValues.chainringSizes[i]"
-                        ngDefaultControl
-                        label="{{getChainringLabel(i+1, total)}}"
-                        hint="No. of teeth on chainring">
-                    </app-number-input>
+                <div class="number-input-row">
+                    <div
+                        *ngFor="let chainring of toRange(customCalculationValues.numberOfChainrings); let i = index; let total = count;"
+                        class="input-col-options">
+                        <app-number-input
+                            [(ngModel)]="customCalculationValues.chainringSizes[i]"
+                            ngDefaultControl
+                            label="{{getChainringLabel(i+1, total)}}"
+                            hint="No. of teeth on chainring">
+                        </app-number-input>
+                    </div>
                 </div>
             </ng-container>
+        </div>
+        <div class="row">
+            <app-slider-input
+                class="col-md-10"
+                label="No. of teeth on smallest and largest cogs"
+                hint="Select the no. of teeth on smallest and largest cogs on the casette"
+                [maxRange]="cogSizes.LARGEST"
+                [minRange]="cogSizes.SMALLEST"
+                [(minValue)]="customCalculationValues.minCasetteSpeed"
+                [(maxValue)]="customCalculationValues.maxCasetteSpeed">
+            </app-slider-input>
+            <app-button 
+                class="col-md-2"
+                [buttonType]="buttonTypes.FORM_SUBMIT" 
+                buttonLabel="Calculate"
+                (click)="customCalculate()">
+            </app-button>
         </div>
     </div>
 </div>

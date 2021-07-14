@@ -7,6 +7,6 @@ export interface CustomCalculation {
     numberOfChainrings?: number;
     chainringSizes: number[];
     casetteSpeed?: number;
-    minCasetteSpeed?: number;
-    maxCasetteSpeed?: number;
+    minCasetteSpeed: number;
+    maxCasetteSpeed: number;
 }

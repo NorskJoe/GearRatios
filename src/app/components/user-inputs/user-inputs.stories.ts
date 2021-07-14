@@ -1,7 +1,9 @@
+import { NgxSliderModule } from '@angular-slider/ngx-slider';
 import { CommonModule } from '@angular/common';
 import { moduleMetadata, Story, Meta } from '@storybook/angular';
 import { InputMode } from 'src/app/models/input.model';
 import { ButtonComponent } from '../button/button.component';
+import { DropdownInputComponent } from '../dropdown-input/dropdown-input.component';
 import { NumberInputComponent } from '../number-input/number-input.component';
 import { UserInputsComponent } from './user-inputs.component';
 
@@ -13,8 +15,12 @@ export default {
                 UserInputsComponent, 
                 NumberInputComponent, 
                 ButtonComponent,
+                DropdownInputComponent,
             ],
-            imports: [CommonModule],
+            imports: [
+                CommonModule,
+                NgxSliderModule
+            ],
         }),
     ],
     excludeStories: /.*Data$/,

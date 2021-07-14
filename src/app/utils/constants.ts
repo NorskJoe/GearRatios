@@ -15,6 +15,11 @@ export var NAVIGATION_LINKS = [
 
 export var GITHUB_LINK = 'https://github.com/NorskJoe';
 
+export var COG_SIZES = {
+  SMALLEST: 10,
+  LARGEST: 46,
+};
+
 export var CHAINRING_SIZES = {
   SINGLE: 1,
   DOUBLE: 2,

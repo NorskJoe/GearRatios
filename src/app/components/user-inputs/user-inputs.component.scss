@@ -10,15 +10,24 @@
 .input-row {
     margin: auto;
     width: 100%;
+    padding-bottom: 30px;
 }
 
 .input-col-dropdown {
-    width: 20%;
     float: left;
 }
 
 .input-col-options {
-    margin-left: 20%;
-    display: table-cell;
-    padding: 0 15px;
+    padding: 0 30px;
+    width: 300px;
+}
+
+.number-input-row {
+    display: flex;
+    justify-content: center;
+}
+
+.inputs-custom {
+    display: grid;
+    margin: 5px 20px;
 }
