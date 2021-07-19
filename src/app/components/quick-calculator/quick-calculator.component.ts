@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ButtonType } from 'src/app/models/button.model';
-import { QuickCalculation } from 'src/app/models/calculation.model';
+import { CalculationResult, QuickCalculation } from 'src/app/models/calculation.model';
+import { CalculatorService } from 'src/app/services/calculator.service';
 
 @Component({
   selector: 'app-quick-calculator',
@@ -8,13 +9,17 @@ import { QuickCalculation } from 'src/app/models/calculation.model';
   styleUrls: ['./quick-calculator.component.scss']
 })
 export class QuickCalculatorComponent {
-  quickCalculationValues: QuickCalculation = {};
+  quickCalculationValues: QuickCalculation = {
+    chainringSize: 0,
+    rearCogSize: 0
+  };
   buttonTypes = ButtonType;
-  constructor() { }
+  result: CalculationResult;
+
+  constructor(private calculatorService: CalculatorService) { }
 
   public calculate() {
-    console.log('rear cog: ', this.quickCalculationValues.rearCogSize);
-    console.log('chainringSize: ', this.quickCalculationValues.chainringSize);
+    this.result = this.calculatorService.calculateQuickRatios(this.quickCalculationValues);
   }
 
 }

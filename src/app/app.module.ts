@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { DropdownInputComponent } from './components/dropdown-input/dropdown-input.component';
 import { NgxSliderModule } from '@angular-slider/ngx-slider';
 import { SliderInputComponent } from './components/slider-input/slider-input.component';
+import { CalculatorService } from './services/calculator.service';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,9 @@ import { SliderInputComponent } from './components/slider-input/slider-input.com
     FormsModule,
     NgxSliderModule,
   ],
-  providers: [],
+  providers: [
+    CalculatorService,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
