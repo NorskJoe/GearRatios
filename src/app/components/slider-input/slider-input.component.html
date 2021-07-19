@@ -7,10 +7,12 @@
 </span>
 </label>
 <app-tip [visible]="showTip" [text]="hint"></app-tip>
-<ngx-slider
-    [(value)]="minValue"
-    [(highValue)]="maxValue"
-    [options]="options"
-    (valueChange)="updateValues()"
-    (highValueChange)="updateValues()">
-</ngx-slider>
+<div class="slider">
+    <ngx-slider
+        [(value)]="minValue"
+        [(highValue)]="maxValue"
+        [options]="options"
+        (valueChange)="updateValues()"
+        (highValueChange)="updateValues()">
+    </ngx-slider>
+</div>

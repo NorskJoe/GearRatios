@@ -1,0 +1,27 @@
+@import "../../../styles/colours.scss";
+
+::ng-deep {
+    .slider {
+        .ngx-slider-active::after {
+            background-color: transparent !important;
+        }
+        .ngx-slider-pointer::after {
+                background: none !important;
+                background-color: transparent !important;
+        }
+        .ngx-slider {
+            .ngx-slider-pointer {
+                background-color: $colour-darkblue;
+            }
+            .ngx-slider-selection {
+                background: $colour-darkblue;
+            }
+            .ngx-slider-bubble {
+                color: $colour-lightblue;
+            }
+            .ngx-slider-limit {
+                display: none !important;
+            }
+        }
+    }
+}
