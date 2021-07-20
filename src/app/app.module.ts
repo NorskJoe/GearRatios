@@ -15,6 +15,7 @@ import { DropdownInputComponent } from './components/dropdown-input/dropdown-inp
 import { NgxSliderModule } from '@angular-slider/ngx-slider';
 import { SliderInputComponent } from './components/slider-input/slider-input.component';
 import { CalculatorService } from './services/calculator.service';
+import { ResultTableComponent } from './components/result-table/result-table.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { CalculatorService } from './services/calculator.service';
     TipComponent,
     DropdownInputComponent,
     SliderInputComponent,
+    ResultTableComponent,
   ],
   imports: [
     BrowserModule,

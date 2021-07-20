@@ -1,0 +1,14 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>Cog/Ring</th>
+            <ng-container *ngFor="let chainring of result.chainrings">
+                <th scope="col">{{ chainring.chainringSize}}</th>
+            </ng-container>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cog of toRange(numberOfCogs); let i = index;" [innerHTML]="getRowData(i)">
+        </tr>
+    </tbody>
+</table>

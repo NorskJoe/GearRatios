@@ -3,6 +3,7 @@ import { ButtonType } from 'src/app/models/button.model';
 import { CalculationResult, CustomCalculation } from 'src/app/models/calculation.model';
 import { CalculatorService } from 'src/app/services/calculator.service';
 import { CHAINRING_SIZES, COG_SIZES } from 'src/app/utils/constants';
+import { ToRange } from 'src/app/utils/helper-functions';
 
 @Component({
   selector: 'app-custom-calculator',
@@ -17,17 +18,10 @@ export class CustomCalculatorComponent {
     minCasetteSpeed: COG_SIZES.SMALLEST,
     maxCasetteSpeed: COG_SIZES.LARGEST,
   };
-  result: CalculationResult[];
+  result: CalculationResult;
+  toRange = ToRange;
 
   constructor(private calculatorService: CalculatorService) { }
-
-  public toRange(i: number): number[] {
-    if (i) {
-      return new Array(+i);
-    } else {
-        return new Array(0);
-    }
-  }
 
   public getChainringLabel(current: number, total: number): string {
     let size = '';

@@ -1,4 +1,4 @@
-<div class="quick-container">   
+<div class="input-container">   
     <div class="row">
         <div class="col-md-4">
             <app-number-input
@@ -23,5 +23,8 @@
                 (click)="calculate()">
             </app-button>
         </div>
+    </div>
+    <div class="row results-container" *ngIf="result">
+        <app-result-table [result]="result"></app-result-table>
     </div>
 </div>

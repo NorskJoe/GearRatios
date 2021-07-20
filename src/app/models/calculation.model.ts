@@ -12,5 +12,15 @@ export interface CustomCalculation {
 }
 
 export interface CalculationResult {
-    ratios: string[];
+    chainrings: Chainring[];
+}
+
+export interface Chainring {
+    chainringSize: number;
+    cogs: Cog[];
+}
+
+export interface Cog {
+    ratio: string;
+    cogSize: number;
 }
