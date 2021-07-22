@@ -1,6 +1,8 @@
-.table {
-    color: red;
-    .top-row {
-        
-    }
+@import '../../../styles/colours.scss';
+
+.my-table {
+    color: $colour-lightblue;
+    text-align: center;
+    width: 90%;
+    margin: auto;
 }

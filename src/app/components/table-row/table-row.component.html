@@ -1,4 +1,6 @@
 <th>{{rowData.header}}</th>
-<td>{{rowData.firstRing}}</td>
-<td>{{rowData.secondRing}}</td>
-<td>{{rowData.thirdRing}}</td>
+<td [ngStyle]="getColour(rowData.firstRing)">{{rowData.firstRing}}</td>
+<td *ngIf="rowData.secondRing" 
+    [ngStyle]="getColour(rowData.secondRing)">{{rowData.secondRing}}</td>
+<td *ngIf="rowData.thirdRing" 
+    [ngStyle]="getColour(rowData.thirdRing)">{{rowData.thirdRing}}</td>

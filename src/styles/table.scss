@@ -1,0 +1,24 @@
+.results-container {
+    padding-bottom: 20px;
+}
+
+thead tr th:first-child,
+tbody tr th:first-child {
+  width: 8em;
+  min-width: 8em;
+  max-width: 8em;
+  word-break: break-all;
+}
+
+table, th, td {
+    border: 1px solid $colour-lightgrey;
+    border-width: unset !important;
+}
+
+th, td {
+  padding: 3px 0;
+}
+
+tbody td {
+  background-color: black;
+}

@@ -32,4 +32,15 @@ export class TableRowComponent implements OnInit {
         : undefined,
     };
   }
+
+  // Assume ratio will always be between 0 and 5
+  // Get colour based on gradient 0 = green, 5 = red
+  public getColour(value: number) {
+    const maxRatio: number = 5;
+    const maxGradient: number = 1;
+    const greenHue: number = 120;
+    
+    var hue=((maxGradient - ((value * maxGradient) / maxRatio)) * greenHue).toString(10);
+    return {'color': `hsl(${hue},100%,50%)`};
+}
 }
