@@ -42,7 +42,7 @@ export class CalculatorService {
         return result;
     }
 
-    private findRatio(cogSize: number, chainringSize: number): string {
-        return (chainringSize / cogSize).toFixed(2);
+    private findRatio(cogSize: number, chainringSize: number): number {
+        return +(chainringSize / cogSize).toFixed(2);
     }
 }

@@ -16,6 +16,7 @@ import { NgxSliderModule } from '@angular-slider/ngx-slider';
 import { SliderInputComponent } from './components/slider-input/slider-input.component';
 import { CalculatorService } from './services/calculator.service';
 import { ResultTableComponent } from './components/result-table/result-table.component';
+import { TableRowComponent } from './components/table-row/table-row.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ResultTableComponent } from './components/result-table/result-table.com
     DropdownInputComponent,
     SliderInputComponent,
     ResultTableComponent,
+    TableRowComponent,
   ],
   imports: [
     BrowserModule,

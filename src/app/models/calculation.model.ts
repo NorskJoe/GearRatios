@@ -21,6 +21,6 @@ export interface Chainring {
 }
 
 export interface Cog {
-    ratio: string;
+    ratio: number;
     cogSize: number;
 }
