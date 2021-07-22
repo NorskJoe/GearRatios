@@ -1,0 +1,15 @@
+<table class="table">
+    <thead>
+        <tr class="top-row">
+            <th>Cog/Ring</th>
+            <ng-container *ngFor="let chainring of result.chainrings">
+                <th scope="col">{{ chainring.chainringSize}}</th>
+            </ng-container>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cog of toRange(numberOfCogs); let i = index;" 
+            app-table-row [chainrings]="result.chainrings" [currentCog]="i">
+        </tr>
+    </tbody>
+</table>

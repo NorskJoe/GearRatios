@@ -43,4 +43,7 @@
             </app-button>
         </div>
     </div>
+    <div class="results-container" *ngIf="result">
+        <app-result-table [result]="result"></app-result-table>
+    </div>
 </div>
