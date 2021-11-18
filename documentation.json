@@ -2,11 +2,82 @@
     "pipes": [],
     "interfaces": [
         {
-            "name": "CustomCalculation",
-            "id": "interface-CustomCalculation-2854006ab8fbd4d7b83fe1a237bd7cb5",
+            "name": "CalculationResult",
+            "id": "interface-CalculationResult-96257c625bada941494de5b289c9b960",
             "file": "src/app/models/calculation.model.ts",
             "type": "interface",
-            "sourceCode": "export interface QuickCalculation {\r\n    chainringSize?: number;\r\n    rearCogSize?: number;\r\n}\r\n\r\nexport interface CustomCalculation {\r\n    numberOfChainrings?: number;\r\n    chainringSizes: number[];\r\n    casetteSpeed?: number;\r\n    minCasetteSpeed: number;\r\n    maxCasetteSpeed: number;\r\n}",
+            "sourceCode": "export interface QuickCalculation {\r\n    chainringSize: number;\r\n    rearCogSize: number;\r\n}\r\n\r\nexport interface CustomCalculation {\r\n    numberOfChainrings?: number;\r\n    chainringSizes: number[];\r\n    casetteSpeed?: number;\r\n    minCasetteSpeed: number;\r\n    maxCasetteSpeed: number;\r\n}\r\n\r\nexport interface CalculationResult {\r\n    chainrings: Chainring[];\r\n}\r\n\r\nexport interface Chainring {\r\n    chainringSize: number;\r\n    cogs: Cog[];\r\n}\r\n\r\nexport interface Cog {\r\n    ratio: number;\r\n    cogSize: number;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "chainrings",
+                    "type": "Chainring[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 15
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 150,
+            "methods": []
+        },
+        {
+            "name": "Chainring",
+            "id": "interface-Chainring-96257c625bada941494de5b289c9b960",
+            "file": "src/app/models/calculation.model.ts",
+            "type": "interface",
+            "sourceCode": "export interface QuickCalculation {\r\n    chainringSize: number;\r\n    rearCogSize: number;\r\n}\r\n\r\nexport interface CustomCalculation {\r\n    numberOfChainrings?: number;\r\n    chainringSizes: number[];\r\n    casetteSpeed?: number;\r\n    minCasetteSpeed: number;\r\n    maxCasetteSpeed: number;\r\n}\r\n\r\nexport interface CalculationResult {\r\n    chainrings: Chainring[];\r\n}\r\n\r\nexport interface Chainring {\r\n    chainringSize: number;\r\n    cogs: Cog[];\r\n}\r\n\r\nexport interface Cog {\r\n    ratio: number;\r\n    cogSize: number;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "chainringSize",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                },
+                {
+                    "name": "cogs",
+                    "type": "Cog[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 20
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 150,
+            "methods": []
+        },
+        {
+            "name": "Cog",
+            "id": "interface-Cog-96257c625bada941494de5b289c9b960",
+            "file": "src/app/models/calculation.model.ts",
+            "type": "interface",
+            "sourceCode": "export interface QuickCalculation {\r\n    chainringSize: number;\r\n    rearCogSize: number;\r\n}\r\n\r\nexport interface CustomCalculation {\r\n    numberOfChainrings?: number;\r\n    chainringSizes: number[];\r\n    casetteSpeed?: number;\r\n    minCasetteSpeed: number;\r\n    maxCasetteSpeed: number;\r\n}\r\n\r\nexport interface CalculationResult {\r\n    chainrings: Chainring[];\r\n}\r\n\r\nexport interface Chainring {\r\n    chainringSize: number;\r\n    cogs: Cog[];\r\n}\r\n\r\nexport interface Cog {\r\n    ratio: number;\r\n    cogSize: number;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "cogSize",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 25
+                },
+                {
+                    "name": "ratio",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 24
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 150,
+            "methods": []
+        },
+        {
+            "name": "CustomCalculation",
+            "id": "interface-CustomCalculation-96257c625bada941494de5b289c9b960",
+            "file": "src/app/models/calculation.model.ts",
+            "type": "interface",
+            "sourceCode": "export interface QuickCalculation {\r\n    chainringSize: number;\r\n    rearCogSize: number;\r\n}\r\n\r\nexport interface CustomCalculation {\r\n    numberOfChainrings?: number;\r\n    chainringSizes: number[];\r\n    casetteSpeed?: number;\r\n    minCasetteSpeed: number;\r\n    maxCasetteSpeed: number;\r\n}\r\n\r\nexport interface CalculationResult {\r\n    chainrings: Chainring[];\r\n}\r\n\r\nexport interface Chainring {\r\n    chainringSize: number;\r\n    cogs: Cog[];\r\n}\r\n\r\nexport interface Cog {\r\n    ratio: number;\r\n    cogSize: number;\r\n}\r\n",
             "properties": [
                 {
                     "name": "casetteSpeed",
@@ -83,22 +154,22 @@
         },
         {
             "name": "QuickCalculation",
-            "id": "interface-QuickCalculation-2854006ab8fbd4d7b83fe1a237bd7cb5",
+            "id": "interface-QuickCalculation-96257c625bada941494de5b289c9b960",
             "file": "src/app/models/calculation.model.ts",
             "type": "interface",
-            "sourceCode": "export interface QuickCalculation {\r\n    chainringSize?: number;\r\n    rearCogSize?: number;\r\n}\r\n\r\nexport interface CustomCalculation {\r\n    numberOfChainrings?: number;\r\n    chainringSizes: number[];\r\n    casetteSpeed?: number;\r\n    minCasetteSpeed: number;\r\n    maxCasetteSpeed: number;\r\n}",
+            "sourceCode": "export interface QuickCalculation {\r\n    chainringSize: number;\r\n    rearCogSize: number;\r\n}\r\n\r\nexport interface CustomCalculation {\r\n    numberOfChainrings?: number;\r\n    chainringSizes: number[];\r\n    casetteSpeed?: number;\r\n    minCasetteSpeed: number;\r\n    maxCasetteSpeed: number;\r\n}\r\n\r\nexport interface CalculationResult {\r\n    chainrings: Chainring[];\r\n}\r\n\r\nexport interface Chainring {\r\n    chainringSize: number;\r\n    cogs: Cog[];\r\n}\r\n\r\nexport interface Cog {\r\n    ratio: number;\r\n    cogSize: number;\r\n}\r\n",
             "properties": [
                 {
                     "name": "chainringSize",
                     "type": "number",
-                    "optional": true,
+                    "optional": false,
                     "description": "",
                     "line": 2
                 },
                 {
                     "name": "rearCogSize",
                     "type": "number",
-                    "optional": true,
+                    "optional": false,
                     "description": "",
                     "line": 3
                 }
@@ -106,9 +177,147 @@
             "indexSignatures": [],
             "kind": 150,
             "methods": []
+        },
+        {
+            "name": "RowData",
+            "id": "interface-RowData-99f4423a62db8891bbb7651434333301",
+            "file": "src/app/components/table-row/table-row.component.ts",
+            "type": "interface",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\nimport { Chainring } from 'src/app/models/calculation.model';\r\n\r\nexport interface RowData {\r\n  header: number;\r\n  firstRing: number;\r\n  secondRing?: number;\r\n  thirdRing?: number;\r\n}\r\n\r\n@Component({\r\n  selector: '[app-table-row]',\r\n  templateUrl: './table-row.component.html',\r\n  styleUrls: ['./table-row.component.scss']\r\n})\r\nexport class TableRowComponent implements OnInit {\r\n  @Input() chainrings: Chainring[];\r\n  @Input() currentCog: number;\r\n  rowData: RowData;\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n    this.rowData = {\r\n      header: this.chainrings[0].cogs[this.currentCog].cogSize,\r\n      firstRing: this.chainrings[0].cogs[this.currentCog].ratio,\r\n      secondRing: this.chainrings.length >= 2\r\n         ? this.chainrings[1].cogs[this.currentCog].ratio\r\n         : undefined,\r\n      thirdRing: this.chainrings.length === 3\r\n        ? this.chainrings[2].cogs[this.currentCog].ratio\r\n        : undefined,\r\n    };\r\n  }\r\n\r\n  // Assume ratio will always be between 0 and 5\r\n  // Get colour based on gradient 0 = green, 5 = red\r\n  public getColour(value: number) {\r\n    const maxRatio: number = 5;\r\n    const maxGradient: number = 1;\r\n    const greenHue: number = 120;\r\n    \r\n    var hue=((maxGradient - ((value * maxGradient) / maxRatio)) * greenHue).toString(10);\r\n    return {'color': `hsl(${hue},100%,50%)`};\r\n}\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "firstRing",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 6
+                },
+                {
+                    "name": "header",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 5
+                },
+                {
+                    "name": "secondRing",
+                    "type": "number",
+                    "optional": true,
+                    "description": "",
+                    "line": 7
+                },
+                {
+                    "name": "thirdRing",
+                    "type": "number",
+                    "optional": true,
+                    "description": "",
+                    "line": 8
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 150,
+            "methods": []
         }
     ],
-    "injectables": [],
+    "injectables": [
+        {
+            "name": "CalculatorService",
+            "id": "injectable-CalculatorService-e5dfc82539177106cc34974080adf06f",
+            "file": "src/app/services/calculator.service.ts",
+            "properties": [],
+            "methods": [
+                {
+                    "name": "calculateCustomRatios",
+                    "args": [
+                        {
+                            "name": "inputs",
+                            "type": "CustomCalculation"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "CalculationResult",
+                    "typeParameters": [],
+                    "line": 23,
+                    "modifierKind": [
+                        114
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "inputs",
+                            "type": "CustomCalculation",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "calculateQuickRatios",
+                    "args": [
+                        {
+                            "name": "inputs",
+                            "type": "QuickCalculation"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "CalculationResult",
+                    "typeParameters": [],
+                    "line": 7,
+                    "modifierKind": [
+                        114
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "inputs",
+                            "type": "QuickCalculation",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "findRatio",
+                    "args": [
+                        {
+                            "name": "cogSize",
+                            "type": "number"
+                        },
+                        {
+                            "name": "chainringSize",
+                            "type": "number"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "number",
+                    "typeParameters": [],
+                    "line": 45,
+                    "modifierKind": [
+                        112
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "cogSize",
+                            "type": "number",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "chainringSize",
+                            "type": "number",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "description": "",
+            "sourceCode": "import { Injectable } from \"@angular/core\";\r\nimport { CalculationResult, QuickCalculation, CustomCalculation } from \"../models/calculation.model\";\r\n\r\n@Injectable()\r\nexport class CalculatorService {\r\n\r\n    public calculateQuickRatios(inputs: QuickCalculation): CalculationResult {\r\n        return {\r\n            chainrings: [\r\n                {\r\n                    chainringSize: inputs.chainringSize,\r\n                    cogs: [\r\n                        {\r\n                            cogSize: inputs.rearCogSize,\r\n                            ratio: this.findRatio(inputs.rearCogSize, inputs.chainringSize)\r\n                        },\r\n                    ],\r\n                },\r\n            ],\r\n        };\r\n    }\r\n\r\n    public calculateCustomRatios(inputs: CustomCalculation): CalculationResult {\r\n        let result = { chainrings: [] } as CalculationResult;\r\n        let cogs: number[] = [];\r\n        for (let i = inputs.minCasetteSpeed; i <= inputs.maxCasetteSpeed; i++) {\r\n            cogs.push(i);\r\n        }\r\n\r\n        inputs.chainringSizes.forEach((chainring) => {\r\n            result.chainrings.push({\r\n                chainringSize: chainring,\r\n                cogs: cogs.map((cog) => {\r\n                    return {\r\n                        cogSize: cog,\r\n                        ratio: this.findRatio(cog, chainring)\r\n                    };\r\n                })\r\n            });\r\n        });\r\n\r\n        return result;\r\n    }\r\n\r\n    private findRatio(cogSize: number, chainringSize: number): number {\r\n        return +(chainringSize / cogSize).toFixed(2);\r\n    }\r\n}",
+            "type": "injectable"
+        }
+    ],
     "classes": [],
     "directives": [],
     "components": [
@@ -216,7 +425,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "@import \"../../../styles/colours.scss\";\r\n\r\n.button-items {\r\n  display: inline;\r\n  margin: 5px;\r\n  :hover {\r\n    cursor: pointer;\r\n    color: $colour-lightblue;\r\n  }\r\n\r\n  button {\r\n    height: 60px;\r\n    width: 200px;\r\n    border: none;\r\n    padding: 0;\r\n    margin: 15px 5px 0 5px;\r\n    background-color: $colour-mediumgrey;\r\n    font-weight: bold;\r\n    color: $colour-darkblue;\r\n    &.nav-button {\r\n      border-radius: 8px 8px 0 0;\r\n    }\r\n    &.nav-active {\r\n      color: $colour-lightblue;\r\n      text-shadow: 0.5px 0.5px $colour-darkblue;\r\n    }\r\n    &.button-submit {\r\n      background-color: $colour-darkgrey;\r\n      border-radius: 4px;\r\n    }\r\n  }\r\n}\r\n\r\n",
+                    "data": "@import \"../../../styles/colours.scss\";\r\n\r\n.button-items {\r\n  display: inline;\r\n  margin: 5px;\r\n  :hover {\r\n    cursor: pointer;\r\n    color: $colour-lightblue;\r\n  }\r\n\r\n  button {\r\n    height: 60px;\r\n    width: 150px;\r\n    border: none;\r\n    padding: 0;\r\n    margin: 15px 5px 0 5px;\r\n    background-color: $colour-mediumgrey;\r\n    font-weight: bold;\r\n    color: $colour-darkblue;\r\n    &.nav-button {\r\n      border-radius: 8px 8px 0 0;\r\n    }\r\n    &.nav-active {\r\n      color: $colour-lightblue;\r\n      text-shadow: 0.5px 0.5px $colour-darkblue;\r\n    }\r\n    &.button-submit {\r\n      background-color: $colour-darkgrey;\r\n      border-radius: 4px;\r\n    }\r\n  }\r\n}\r\n\r\n",
                     "styleUrl": "./button.component.scss"
                 }
             ],
@@ -231,7 +440,7 @@
         },
         {
             "name": "CustomCalculatorComponent",
-            "id": "component-CustomCalculatorComponent-fb90c6f487bd24e4bd0a3c1ec00b3d70",
+            "id": "component-CustomCalculatorComponent-ca3f2d5faec68b5d4e2cf9ec9bfa1204",
             "file": "src/app/components/custom-calculator/custom-calculator.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -256,7 +465,7 @@
                     "type": "",
                     "optional": false,
                     "description": "",
-                    "line": 12
+                    "line": 14
                 },
                 {
                     "name": "cogSizes",
@@ -264,7 +473,7 @@
                     "type": "",
                     "optional": false,
                     "description": "",
-                    "line": 13
+                    "line": 15
                 },
                 {
                     "name": "customCalculationValues",
@@ -272,7 +481,22 @@
                     "type": "CustomCalculation",
                     "optional": false,
                     "description": "",
-                    "line": 14
+                    "line": 16
+                },
+                {
+                    "name": "result",
+                    "type": "CalculationResult",
+                    "optional": false,
+                    "description": "",
+                    "line": 21
+                },
+                {
+                    "name": "toRange",
+                    "defaultValue": "ToRange",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 22
                 }
             ],
             "methodsClass": [
@@ -282,7 +506,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 54,
+                    "line": 50,
                     "modifierKind": [
                         114
                     ]
@@ -302,7 +526,7 @@
                     "optional": false,
                     "returnType": "string",
                     "typeParameters": [],
-                    "line": 30,
+                    "line": 26,
                     "modifierKind": [
                         114
                     ],
@@ -322,31 +546,6 @@
                             }
                         }
                     ]
-                },
-                {
-                    "name": "toRange",
-                    "args": [
-                        {
-                            "name": "i",
-                            "type": "number"
-                        }
-                    ],
-                    "optional": false,
-                    "returnType": "number[]",
-                    "typeParameters": [],
-                    "line": 22,
-                    "modifierKind": [
-                        114
-                    ],
-                    "jsdoctags": [
-                        {
-                            "name": "i",
-                            "type": "number",
-                            "tagName": {
-                                "text": "param"
-                            }
-                        }
-                    ]
                 }
             ],
             "hostBindings": [],
@@ -354,7 +553,7 @@
             "description": "",
             "rawdescription": "",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\r\nimport { ButtonType } from 'src/app/models/button.model';\r\nimport { CustomCalculation } from 'src/app/models/calculation.model';\r\nimport { CHAINRING_SIZES, COG_SIZES } from 'src/app/utils/constants';\r\n\r\n@Component({\r\n  selector: 'app-custom-calculator',\r\n  templateUrl: './custom-calculator.component.html',\r\n  styleUrls: ['./custom-calculator.component.scss']\r\n})\r\nexport class CustomCalculatorComponent {\r\n  buttonTypes = ButtonType;\r\n  cogSizes = COG_SIZES;\r\n  customCalculationValues: CustomCalculation = {\r\n    chainringSizes: [],\r\n    minCasetteSpeed: COG_SIZES.SMALLEST,\r\n    maxCasetteSpeed: COG_SIZES.LARGEST,\r\n  };\r\n\r\n  constructor() { }\r\n\r\n  public toRange(i: number): number[] {\r\n    if (i) {\r\n      return new Array(+i);\r\n    } else {\r\n        return new Array(0);\r\n    }\r\n  }\r\n\r\n  public getChainringLabel(current: number, total: number): string {\r\n    let size = '';\r\n    \r\n    switch (current) {\r\n      case CHAINRING_SIZES.SINGLE:\r\n        if (total > CHAINRING_SIZES.SINGLE) {\r\n          size = 'smallest';\r\n        }\r\n        break;\r\n      case CHAINRING_SIZES.DOUBLE:\r\n        if (total === CHAINRING_SIZES.DOUBLE) {\r\n          size = 'largest';\r\n        } else {\r\n          size = 'middle';\r\n        }\r\n        break;\r\n      case CHAINRING_SIZES.TRIPLE:\r\n        size = 'largest';\r\n        break;\r\n    }\r\n\r\n    return `No. of teeth on the ${size} chainring`;\r\n  }\r\n\r\n  public calculate() {\r\n    console.log('number of chainrings: ', this.customCalculationValues.numberOfChainrings);\r\n    console.log('sizes of chainrings: ', this.customCalculationValues.chainringSizes);\r\n    console.log('min casette: ', this.customCalculationValues.minCasetteSpeed);\r\n    console.log('max casette: ', this.customCalculationValues.maxCasetteSpeed);\r\n  }\r\n\r\n}\r\n",
+            "sourceCode": "import { Component } from '@angular/core';\r\nimport { ButtonType } from 'src/app/models/button.model';\r\nimport { CalculationResult, CustomCalculation } from 'src/app/models/calculation.model';\r\nimport { CalculatorService } from 'src/app/services/calculator.service';\r\nimport { CHAINRING_SIZES, COG_SIZES } from 'src/app/utils/constants';\r\nimport { ToRange } from 'src/app/utils/helper-functions';\r\n\r\n@Component({\r\n  selector: 'app-custom-calculator',\r\n  templateUrl: './custom-calculator.component.html',\r\n  styleUrls: ['./custom-calculator.component.scss']\r\n})\r\nexport class CustomCalculatorComponent {\r\n  buttonTypes = ButtonType;\r\n  cogSizes = COG_SIZES;\r\n  customCalculationValues: CustomCalculation = {\r\n    chainringSizes: [],\r\n    minCasetteSpeed: COG_SIZES.SMALLEST,\r\n    maxCasetteSpeed: COG_SIZES.LARGEST,\r\n  };\r\n  result: CalculationResult;\r\n  toRange = ToRange;\r\n\r\n  constructor(private calculatorService: CalculatorService) { }\r\n\r\n  public getChainringLabel(current: number, total: number): string {\r\n    let size = '';\r\n    \r\n    switch (current) {\r\n      case CHAINRING_SIZES.SINGLE:\r\n        if (total > CHAINRING_SIZES.SINGLE) {\r\n          size = 'smallest';\r\n        }\r\n        break;\r\n      case CHAINRING_SIZES.DOUBLE:\r\n        if (total === CHAINRING_SIZES.DOUBLE) {\r\n          size = 'largest';\r\n        } else {\r\n          size = 'middle';\r\n        }\r\n        break;\r\n      case CHAINRING_SIZES.TRIPLE:\r\n        size = 'largest';\r\n        break;\r\n    }\r\n\r\n    return `No. of teeth on the ${size} chainring`;\r\n  }\r\n\r\n  public calculate() {\r\n    this.result = this.calculatorService.calculateCustomRatios(this.customCalculationValues);\r\n  }\r\n\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -366,10 +565,24 @@
             "constructorObj": {
                 "name": "constructor",
                 "description": "",
-                "args": [],
-                "line": 18
+                "args": [
+                    {
+                        "name": "calculatorService",
+                        "type": "CalculatorService"
+                    }
+                ],
+                "line": 22,
+                "jsdoctags": [
+                    {
+                        "name": "calculatorService",
+                        "type": "CalculatorService",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
             },
-            "templateData": "<div class=\"custom-container\">\r\n    <div class=\"inner-container\">\r\n        <div class=\"input-row\">\r\n            <div class=\"input-col-dropdown\">\r\n                <app-dropdown-input\r\n                    [(ngModel)]=\"customCalculationValues.numberOfChainrings\"\r\n                    ngDefaultControl\r\n                    [options]=\"[1,2,3]\"\r\n                    label=\"No. of chainrings\"\r\n                    hint=\"The number of large chainrings at the front of the bike\">\r\n                </app-dropdown-input>\r\n            </div>\r\n            <ng-container *ngIf=\"customCalculationValues.numberOfChainrings\">\r\n                <div class=\"number-input-row\">\r\n                    <div\r\n                        *ngFor=\"let chainring of toRange(customCalculationValues.numberOfChainrings); let i = index; let total = count;\"\r\n                        class=\"input-col-options\">\r\n                        <app-number-input\r\n                            [(ngModel)]=\"customCalculationValues.chainringSizes[i]\"\r\n                            ngDefaultControl\r\n                            label=\"{{getChainringLabel(i+1, total)}}\"\r\n                            hint=\"No. of teeth on chainring\">\r\n                        </app-number-input>\r\n                    </div>\r\n                </div>\r\n            </ng-container>\r\n        </div>\r\n        <div class=\"row\">\r\n            <app-slider-input\r\n                class=\"col-md-10\"\r\n                label=\"No. of teeth on smallest and largest cogs\"\r\n                hint=\"Select the no. of teeth on smallest and largest cogs on the casette\"\r\n                [maxRange]=\"cogSizes.LARGEST\"\r\n                [minRange]=\"cogSizes.SMALLEST\"\r\n                [(minValue)]=\"customCalculationValues.minCasetteSpeed\"\r\n                [(maxValue)]=\"customCalculationValues.maxCasetteSpeed\">\r\n            </app-slider-input>\r\n            <app-button \r\n                class=\"col-md-2\"\r\n                [buttonType]=\"buttonTypes.FORM_SUBMIT\" \r\n                buttonLabel=\"Calculate\"\r\n                (click)=\"calculate()\">\r\n            </app-button>\r\n        </div>\r\n    </div>\r\n</div>\r\n"
+            "templateData": "<div class=\"custom-container\">\r\n    <div class=\"inner-container\">\r\n        <div class=\"input-row\">\r\n            <div class=\"input-col-dropdown\">\r\n                <app-dropdown-input\r\n                    [(ngModel)]=\"customCalculationValues.numberOfChainrings\"\r\n                    ngDefaultControl\r\n                    [options]=\"[1,2,3]\"\r\n                    label=\"No. of chainrings\"\r\n                    hint=\"The number of large chainrings at the front of the bike\">\r\n                </app-dropdown-input>\r\n            </div>\r\n            <ng-container *ngIf=\"customCalculationValues.numberOfChainrings\">\r\n                <div class=\"number-input-row\">\r\n                    <div\r\n                        *ngFor=\"let chainring of toRange(customCalculationValues.numberOfChainrings); let i = index; let total = count;\"\r\n                        class=\"input-col-options\">\r\n                        <app-number-input\r\n                            [(ngModel)]=\"customCalculationValues.chainringSizes[i]\"\r\n                            ngDefaultControl\r\n                            label=\"{{getChainringLabel(i+1, total)}}\"\r\n                            hint=\"No. of teeth on chainring\">\r\n                        </app-number-input>\r\n                    </div>\r\n                </div>\r\n            </ng-container>\r\n        </div>\r\n        <div class=\"row\">\r\n            <app-slider-input\r\n                class=\"col-md-10\"\r\n                label=\"No. of teeth on smallest and largest cogs\"\r\n                hint=\"Select the no. of teeth on smallest and largest cogs on the casette\"\r\n                [maxRange]=\"cogSizes.LARGEST\"\r\n                [minRange]=\"cogSizes.SMALLEST\"\r\n                [(minValue)]=\"customCalculationValues.minCasetteSpeed\"\r\n                [(maxValue)]=\"customCalculationValues.maxCasetteSpeed\">\r\n            </app-slider-input>\r\n            <app-button \r\n                class=\"col-md-2\"\r\n                [buttonType]=\"buttonTypes.FORM_SUBMIT\" \r\n                buttonLabel=\"Calculate\"\r\n                (click)=\"calculate()\">\r\n            </app-button>\r\n        </div>\r\n    </div>\r\n    <div class=\"results-container\" *ngIf=\"result\">\r\n        <app-result-table [result]=\"result\"></app-result-table>\r\n    </div>\r\n</div>\r\n"
         },
         {
             "name": "DropdownInputComponent",
@@ -600,7 +813,7 @@
         },
         {
             "name": "NumberInputComponent",
-            "id": "component-NumberInputComponent-240feaa35b14a3a9db7471189ab43b83",
+            "id": "component-NumberInputComponent-6a5ff241c07e45c83884cf0fc837c119",
             "file": "src/app/components/number-input/number-input.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -657,7 +870,7 @@
             "description": "",
             "rawdescription": "",
             "type": "component",
-            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'app-number-input',\n  templateUrl: './number-input.component.html',\n  styleUrls: ['./number-input.component.scss']\n})\nexport class NumberInputComponent {\n  @Input() label: string;\n  @Input() hint: string;\n  showTip: boolean = false;\n\n  constructor() { }\n\n  public openTip() {\n    this.showTip = !this.showTip;\n  }\n}\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-number-input',\r\n  templateUrl: './number-input.component.html',\r\n  styleUrls: ['./number-input.component.scss']\r\n})\r\nexport class NumberInputComponent {\r\n  @Input() label: string;\r\n  @Input() hint: string;\r\n  showTip: boolean = false;\r\n\r\n  constructor() { }\r\n\r\n  public openTip() {\r\n    this.showTip = !this.showTip;\r\n  }\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -676,7 +889,7 @@
         },
         {
             "name": "QuickCalculatorComponent",
-            "id": "component-QuickCalculatorComponent-72c60ee9941b649345d0fc526e6030bf",
+            "id": "component-QuickCalculatorComponent-4d9a72027de3e331b831556c668cb67f",
             "file": "src/app/components/quick-calculator/quick-calculator.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -701,15 +914,22 @@
                     "type": "",
                     "optional": false,
                     "description": "",
-                    "line": 12
+                    "line": 16
                 },
                 {
                     "name": "quickCalculationValues",
-                    "defaultValue": "{}",
+                    "defaultValue": "{\r\n    chainringSize: 0,\r\n    rearCogSize: 0\r\n  }",
                     "type": "QuickCalculation",
                     "optional": false,
                     "description": "",
-                    "line": 11
+                    "line": 12
+                },
+                {
+                    "name": "result",
+                    "type": "CalculationResult",
+                    "optional": false,
+                    "description": "",
+                    "line": 17
                 }
             ],
             "methodsClass": [
@@ -719,7 +939,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 15,
+                    "line": 21,
                     "modifierKind": [
                         114
                     ]
@@ -730,11 +950,11 @@
             "description": "",
             "rawdescription": "",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\r\nimport { ButtonType } from 'src/app/models/button.model';\r\nimport { QuickCalculation } from 'src/app/models/calculation.model';\r\n\r\n@Component({\r\n  selector: 'app-quick-calculator',\r\n  templateUrl: './quick-calculator.component.html',\r\n  styleUrls: ['./quick-calculator.component.scss']\r\n})\r\nexport class QuickCalculatorComponent {\r\n  quickCalculationValues: QuickCalculation = {};\r\n  buttonTypes = ButtonType;\r\n  constructor() { }\r\n\r\n  public calculate() {\r\n    console.log('rear cog: ', this.quickCalculationValues.rearCogSize);\r\n    console.log('chainringSize: ', this.quickCalculationValues.chainringSize);\r\n  }\r\n\r\n}\r\n",
+            "sourceCode": "import { Component } from '@angular/core';\r\nimport { ButtonType } from 'src/app/models/button.model';\r\nimport { CalculationResult, QuickCalculation } from 'src/app/models/calculation.model';\r\nimport { CalculatorService } from 'src/app/services/calculator.service';\r\n\r\n@Component({\r\n  selector: 'app-quick-calculator',\r\n  templateUrl: './quick-calculator.component.html',\r\n  styleUrls: ['./quick-calculator.component.scss']\r\n})\r\nexport class QuickCalculatorComponent {\r\n  quickCalculationValues: QuickCalculation = {\r\n    chainringSize: 0,\r\n    rearCogSize: 0\r\n  };\r\n  buttonTypes = ButtonType;\r\n  result: CalculationResult;\r\n\r\n  constructor(private calculatorService: CalculatorService) { }\r\n\r\n  public calculate() {\r\n    this.result = this.calculatorService.calculateQuickRatios(this.quickCalculationValues);\r\n  }\r\n\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "@import \"../../../styles/colours.scss\";\r\n\r\n.quick-container {\r\n    background-color: $colour-mediumgrey;\r\n    width: 90%;\r\n    margin: 0 auto;\r\n    min-height: 300px;\r\n    border-radius: 16px;\r\n    box-shadow: 0px 1px 2px $colour-darkblue;\r\n    padding: 20px 50px;\r\n    display: flex;\r\n    justify-content: center;\r\n}",
+                    "data": "@import \"../../../styles/colours.scss\";\r\n\r\n.input-container {\r\n    background-color: $colour-mediumgrey;\r\n    width: 90%;\r\n    margin: 0 auto;\r\n    min-height: 300px;\r\n    border-radius: 16px;\r\n    box-shadow: 0px 1px 2px $colour-darkblue;\r\n    padding: 10px 15px;\r\n}\r\n\r\n.results-container {\r\n    padding: 20px 15px;\r\n}",
                     "styleUrl": "./quick-calculator.component.scss"
                 }
             ],
@@ -742,10 +962,102 @@
             "constructorObj": {
                 "name": "constructor",
                 "description": "",
-                "args": [],
-                "line": 12
+                "args": [
+                    {
+                        "name": "calculatorService",
+                        "type": "CalculatorService"
+                    }
+                ],
+                "line": 17,
+                "jsdoctags": [
+                    {
+                        "name": "calculatorService",
+                        "type": "CalculatorService",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
             },
-            "templateData": "<div class=\"quick-container\">   \r\n    <div class=\"row\">\r\n        <div class=\"col-md-4\">\r\n            <app-number-input\r\n                [(ngModel)]=\"quickCalculationValues.rearCogSize\"\r\n                ngDefaultControl \r\n                label=\"No. of teeth on casette\" \r\n                hint=\"Add the number of teeth on the cog of the rear casette\">\r\n            </app-number-input>\r\n        </div>\r\n        <div class=\"col-md-4\">\r\n            <app-number-input \r\n                [(ngModel)]=\"quickCalculationValues.chainringSize\"\r\n                ngDefaultControl    \r\n                label=\"No. of teeth on chainring\" \r\n                hint=\"Add the number of teeth on the front chainring\">\r\n            </app-number-input>\r\n        </div>\r\n        <div class=\"col-md-4\">\r\n            <app-button \r\n                [buttonType]=\"buttonTypes.FORM_SUBMIT\" \r\n                buttonLabel=\"Calculate\"\r\n                (click)=\"calculate()\">\r\n            </app-button>\r\n        </div>\r\n    </div>\r\n</div>"
+            "templateData": "<div class=\"input-container\">   \r\n    <div class=\"row\">\r\n        <div class=\"col-md-4\">\r\n            <app-number-input\r\n                [(ngModel)]=\"quickCalculationValues.rearCogSize\"\r\n                ngDefaultControl \r\n                label=\"No. of teeth on casette\" \r\n                hint=\"Add the number of teeth on the cog of the rear casette\">\r\n            </app-number-input>\r\n        </div>\r\n        <div class=\"col-md-4\">\r\n            <app-number-input \r\n                [(ngModel)]=\"quickCalculationValues.chainringSize\"\r\n                ngDefaultControl    \r\n                label=\"No. of teeth on chainring\" \r\n                hint=\"Add the number of teeth on the front chainring\">\r\n            </app-number-input>\r\n        </div>\r\n        <div class=\"col-md-4\">\r\n            <app-button \r\n                [buttonType]=\"buttonTypes.FORM_SUBMIT\" \r\n                buttonLabel=\"Calculate\"\r\n                (click)=\"calculate()\">\r\n            </app-button>\r\n        </div>\r\n    </div>\r\n    <div class=\"row results-container\" *ngIf=\"result\">\r\n        <app-result-table [result]=\"result\"></app-result-table>\r\n    </div>\r\n</div>\r\n"
+        },
+        {
+            "name": "ResultTableComponent",
+            "id": "component-ResultTableComponent-b1abe8fa2e392af7bdc6e92f27960e5a",
+            "file": "src/app/components/result-table/result-table.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-result-table",
+            "styleUrls": [
+                "./result-table.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./result-table.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "result",
+                    "line": 11,
+                    "type": "CalculationResult"
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "numberOfCogs",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
+                },
+                {
+                    "name": "toRange",
+                    "defaultValue": "ToRange",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 13
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 17
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\nimport { CalculationResult } from 'src/app/models/calculation.model';\r\nimport { ToRange } from 'src/app/utils/helper-functions';\r\n\r\n@Component({\r\n  selector: 'app-result-table',\r\n  templateUrl: './result-table.component.html',\r\n  styleUrls: ['./result-table.component.scss']\r\n})\r\nexport class ResultTableComponent implements OnInit {\r\n  @Input() result: CalculationResult;\r\n  numberOfCogs: number;\r\n  toRange = ToRange;\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n    this.numberOfCogs = this.result.chainrings[0].cogs.length;\r\n  }\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@import '../../../styles/colours.scss';\r\n\r\n.my-table {\r\n    color: $colour-lightblue;\r\n    text-align: center;\r\n    width: 90%;\r\n    margin: auto;\r\n}",
+                    "styleUrl": "./result-table.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [],
+                "line": 13
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<table class=\"my-table\">\r\n    <thead>\r\n        <tr class=\"top-row\">\r\n            <th>Cog/Ring</th>\r\n            <ng-container *ngFor=\"let chainring of result.chainrings\">\r\n                <th scope=\"col\">{{ chainring.chainringSize}}</th>\r\n            </ng-container>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n        <tr *ngFor=\"let cog of toRange(numberOfCogs); let i = index;\" \r\n            app-table-row [chainrings]=\"result.chainrings\" [currentCog]=\"i\">\r\n        </tr>\r\n    </tbody>\r\n</table>"
         },
         {
             "name": "SliderInputComponent",
@@ -869,7 +1181,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "",
+                    "data": "@import \"../../../styles/colours.scss\";\r\n\r\n::ng-deep {\r\n    .slider {\r\n        .ngx-slider-active::after {\r\n            background-color: transparent !important;\r\n        }\r\n        .ngx-slider-pointer::after {\r\n                background: none !important;\r\n                background-color: transparent !important;\r\n        }\r\n        .ngx-slider {\r\n            .ngx-slider-pointer {\r\n                background-color: $colour-darkblue;\r\n            }\r\n            .ngx-slider-selection {\r\n                background: $colour-darkblue;\r\n            }\r\n            .ngx-slider-bubble {\r\n                color: $colour-lightblue;\r\n            }\r\n            .ngx-slider-limit {\r\n                display: none !important;\r\n            }\r\n        }\r\n    }\r\n}\r\n",
                     "styleUrl": "./slider-input.component.scss"
                 }
             ],
@@ -883,11 +1195,111 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<label class=\"input-label\">\r\n    {{ label }}\r\n    <span \r\n    class=\"tip-icon\"\r\n    (click)=\"openTip()\">\r\n    <i class=\"bi bi-question-circle-fill\"></i>\r\n</span>\r\n</label>\r\n<app-tip [visible]=\"showTip\" [text]=\"hint\"></app-tip>\r\n<ngx-slider\r\n    [(value)]=\"minValue\"\r\n    [(highValue)]=\"maxValue\"\r\n    [options]=\"options\"\r\n    (valueChange)=\"updateValues()\"\r\n    (highValueChange)=\"updateValues()\">\r\n</ngx-slider>"
+            "templateData": "<label class=\"input-label\">\r\n    {{ label }}\r\n    <span \r\n    class=\"tip-icon\"\r\n    (click)=\"openTip()\">\r\n    <i class=\"bi bi-question-circle-fill\"></i>\r\n</span>\r\n</label>\r\n<app-tip [visible]=\"showTip\" [text]=\"hint\"></app-tip>\r\n<div class=\"slider\">\r\n    <ngx-slider\r\n        [(value)]=\"minValue\"\r\n        [(highValue)]=\"maxValue\"\r\n        [options]=\"options\"\r\n        (valueChange)=\"updateValues()\"\r\n        (highValueChange)=\"updateValues()\">\r\n    </ngx-slider>\r\n</div>"
+        },
+        {
+            "name": "TableRowComponent",
+            "id": "component-TableRowComponent-99f4423a62db8891bbb7651434333301",
+            "file": "src/app/components/table-row/table-row.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "[app-table-row]",
+            "styleUrls": [
+                "./table-row.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./table-row.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "chainrings",
+                    "line": 17,
+                    "type": "Chainring[]"
+                },
+                {
+                    "name": "currentCog",
+                    "line": 18,
+                    "type": "number"
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "rowData",
+                    "type": "RowData",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "getColour",
+                    "args": [
+                        {
+                            "name": "value",
+                            "type": "number"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "{ 'color': string; }",
+                    "typeParameters": [],
+                    "line": 38,
+                    "modifierKind": [
+                        114
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "value",
+                            "type": "number",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 23
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\nimport { Chainring } from 'src/app/models/calculation.model';\r\n\r\nexport interface RowData {\r\n  header: number;\r\n  firstRing: number;\r\n  secondRing?: number;\r\n  thirdRing?: number;\r\n}\r\n\r\n@Component({\r\n  selector: '[app-table-row]',\r\n  templateUrl: './table-row.component.html',\r\n  styleUrls: ['./table-row.component.scss']\r\n})\r\nexport class TableRowComponent implements OnInit {\r\n  @Input() chainrings: Chainring[];\r\n  @Input() currentCog: number;\r\n  rowData: RowData;\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n    this.rowData = {\r\n      header: this.chainrings[0].cogs[this.currentCog].cogSize,\r\n      firstRing: this.chainrings[0].cogs[this.currentCog].ratio,\r\n      secondRing: this.chainrings.length >= 2\r\n         ? this.chainrings[1].cogs[this.currentCog].ratio\r\n         : undefined,\r\n      thirdRing: this.chainrings.length === 3\r\n        ? this.chainrings[2].cogs[this.currentCog].ratio\r\n        : undefined,\r\n    };\r\n  }\r\n\r\n  // Assume ratio will always be between 0 and 5\r\n  // Get colour based on gradient 0 = green, 5 = red\r\n  public getColour(value: number) {\r\n    const maxRatio: number = 5;\r\n    const maxGradient: number = 1;\r\n    const greenHue: number = 120;\r\n    \r\n    var hue=((maxGradient - ((value * maxGradient) / maxRatio)) * greenHue).toString(10);\r\n    return {'color': `hsl(${hue},100%,50%)`};\r\n}\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./table-row.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [],
+                "line": 19
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<th>{{rowData.header}}</th>\r\n<td [ngStyle]=\"getColour(rowData.firstRing)\">{{rowData.firstRing}}</td>\r\n<td *ngIf=\"rowData.secondRing\" \r\n    [ngStyle]=\"getColour(rowData.secondRing)\">{{rowData.secondRing}}</td>\r\n<td *ngIf=\"rowData.thirdRing\" \r\n    [ngStyle]=\"getColour(rowData.thirdRing)\">{{rowData.thirdRing}}</td>\r\n"
         },
         {
             "name": "TipComponent",
-            "id": "component-TipComponent-def48a0e0a68747a13e5cb0b40a4e7b2",
+            "id": "component-TipComponent-858d3678eb0d77889d99ba2267c87bc4",
             "file": "src/app/components/tip/tip.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -923,7 +1335,7 @@
             "description": "",
             "rawdescription": "",
             "type": "component",
-            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'app-tip',\n  templateUrl: './tip.component.html',\n  styleUrls: ['./tip.component.scss']\n})\nexport class TipComponent {\n  @Input() visible: boolean;\n  @Input() text: string;\n  \n  constructor() { }\n}\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-tip',\r\n  templateUrl: './tip.component.html',\r\n  styleUrls: ['./tip.component.scss']\r\n})\r\nexport class TipComponent {\r\n  @Input() visible: boolean;\r\n  @Input() text: string;\r\n  \r\n  constructor() { }\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -938,7 +1350,7 @@
                 "args": [],
                 "line": 10
             },
-            "templateData": "<div [ngClass]=\"{'show-tip': visible, 'hide-tip': !visible}\">\n    <i class=\"bi bi-lightbulb hint-icon\"></i>\n    {{text}}\n</div>\n"
+            "templateData": "<div [ngClass]=\"{'show-tip': visible, 'hide-tip': !visible}\">\r\n    <i class=\"bi bi-lightbulb hint-icon\"></i>\r\n    {{text}}\r\n</div>\r\n"
         }
     ],
     "modules": [
@@ -947,7 +1359,11 @@
             "children": [
                 {
                     "type": "providers",
-                    "elements": []
+                    "elements": [
+                        {
+                            "name": "CalculatorService"
+                        }
+                    ]
                 },
                 {
                     "type": "declarations",
@@ -977,7 +1393,13 @@
                             "name": "QuickCalculatorComponent"
                         },
                         {
+                            "name": "ResultTableComponent"
+                        },
+                        {
                             "name": "SliderInputComponent"
+                        },
+                        {
+                            "name": "TableRowComponent"
                         },
                         {
                             "name": "TipComponent"
@@ -1094,7 +1516,31 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/app/components/footer/footer.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/number-input/number-input.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/app/components/nav-bar/nav-bar.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/quick-calculator/quick-calculator.stories.ts",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -1111,22 +1557,6 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/components/tip/tip.stories.ts",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/components/number-input/number-input.stories.ts",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/components/footer/footer.stories.ts",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -1197,6 +1627,14 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/app/components/button/button.stories.ts",
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/app/components/custom-calculator/custom-calculator.stories.ts",
                 "type": "Story<CustomCalculatorComponent>",
                 "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
@@ -1213,8 +1651,16 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/button/button.stories.ts",
-                "type": "Story<ButtonComponent>",
+                "file": "src/app/components/footer/footer.stories.ts",
+                "type": "Story<FooterComponent>",
+                "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/number-input/number-input.stories.ts",
+                "type": "Story<NumberInputComponent>",
                 "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
             },
             {
@@ -1223,6 +1669,14 @@
                 "subtype": "variable",
                 "file": "src/app/components/nav-bar/nav-bar.stories.ts",
                 "type": "Story<NavBarComponent>",
+                "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/quick-calculator/quick-calculator.stories.ts",
+                "type": "Story<QuickCalculatorComponent>",
                 "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
             },
             {
@@ -1240,25 +1694,31 @@
                 "file": "src/app/components/tip/tip.stories.ts",
                 "type": "Story<TipComponent>",
                 "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/components/number-input/number-input.stories.ts",
-                "type": "Story<NumberInputComponent>",
-                "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/components/footer/footer.stories.ts",
-                "type": "Story<FooterComponent>",
-                "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
             }
         ],
-        "functions": [],
+        "functions": [
+            {
+                "name": "ToRange",
+                "file": "src/app/utils/helper-functions.ts",
+                "ctype": "miscellaneous",
+                "subtype": "function",
+                "description": "",
+                "args": [
+                    {
+                        "name": "i"
+                    }
+                ],
+                "returnType": "number[]",
+                "jsdoctags": [
+                    {
+                        "name": "i",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            }
+        ],
         "typealiases": [],
         "enumerations": [
             {
@@ -1419,6 +1879,42 @@
                     "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
                 }
             ],
+            "src/app/components/footer/footer.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/footer/footer.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/footer/footer.stories.ts",
+                    "type": "Story<FooterComponent>",
+                    "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
+                }
+            ],
+            "src/app/components/number-input/number-input.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/number-input/number-input.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/number-input/number-input.stories.ts",
+                    "type": "Story<NumberInputComponent>",
+                    "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
+                }
+            ],
             "src/app/components/nav-bar/nav-bar.stories.ts": [
                 {
                     "name": "Default",
@@ -1442,6 +1938,24 @@
                     "subtype": "variable",
                     "file": "src/app/components/nav-bar/nav-bar.stories.ts",
                     "type": "Story<NavBarComponent>",
+                    "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
+                }
+            ],
+            "src/app/components/quick-calculator/quick-calculator.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/quick-calculator/quick-calculator.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/quick-calculator/quick-calculator.stories.ts",
+                    "type": "Story<QuickCalculatorComponent>",
                     "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
                 }
             ],
@@ -1481,42 +1995,6 @@
                     "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
                 }
             ],
-            "src/app/components/number-input/number-input.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/number-input/number-input.stories.ts",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/number-input/number-input.stories.ts",
-                    "type": "Story<NumberInputComponent>",
-                    "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
-                }
-            ],
-            "src/app/components/footer/footer.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/footer/footer.stories.ts",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/footer/footer.stories.ts",
-                    "type": "Story<FooterComponent>",
-                    "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
-                }
-            ],
             "src/environments/environment.ts": [
                 {
                     "name": "environment",
@@ -1538,7 +2016,31 @@
                 }
             ]
         },
-        "groupedFunctions": {},
+        "groupedFunctions": {
+            "src/app/utils/helper-functions.ts": [
+                {
+                    "name": "ToRange",
+                    "file": "src/app/utils/helper-functions.ts",
+                    "ctype": "miscellaneous",
+                    "subtype": "function",
+                    "description": "",
+                    "args": [
+                        {
+                            "name": "i"
+                        }
+                    ],
+                    "returnType": "number[]",
+                    "jsdoctags": [
+                        {
+                            "name": "i",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
         "groupedEnumerations": {
             "src/app/models/button.model.ts": [
                 {
@@ -1683,7 +2185,7 @@
                 "linktype": "component",
                 "name": "CustomCalculatorComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/8",
+                "coverageCount": "0/9",
                 "status": "low"
             },
             {
@@ -1838,7 +2340,36 @@
                 "linktype": "component",
                 "name": "QuickCalculatorComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/5",
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/quick-calculator/quick-calculator.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/quick-calculator/quick-calculator.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/result-table/result-table.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ResultTableComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
                 "status": "low"
             },
             {
@@ -1868,6 +2399,24 @@
                 "name": "Template",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/table-row/table-row.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TableRowComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/table-row/table-row.component.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "RowData",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
                 "status": "low"
             },
             {
@@ -1903,6 +2452,33 @@
                 "filePath": "src/app/models/calculation.model.ts",
                 "type": "interface",
                 "linktype": "interface",
+                "name": "CalculationResult",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/models/calculation.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Chainring",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/models/calculation.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Cog",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/models/calculation.model.ts",
+                "type": "interface",
+                "linktype": "interface",
                 "name": "CustomCalculation",
                 "coveragePercent": 0,
                 "coverageCount": "0/6",
@@ -1922,6 +2498,15 @@
                 "type": "interface",
                 "linktype": "interface",
                 "name": "NavLink",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/services/calculator.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "CalculatorService",
                 "coveragePercent": 0,
                 "coverageCount": "0/4",
                 "status": "low"
@@ -1962,6 +2547,15 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "NAVIGATION_LINKS",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/utils/helper-functions.ts",
+                "type": "function",
+                "linksubtype": "function",
+                "name": "ToRange",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

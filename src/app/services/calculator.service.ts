@@ -1,7 +1,9 @@
 import { Injectable } from "@angular/core";
 import { CalculationResult, QuickCalculation, CustomCalculation } from "../models/calculation.model";
 
-@Injectable()
+@Injectable({
+    providedIn: 'root',
+})
 export class CalculatorService {
 
     public calculateQuickRatios(inputs: QuickCalculation): CalculationResult {

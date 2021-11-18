@@ -2,6 +2,7 @@ import { NgxSliderModule } from '@angular-slider/ngx-slider';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { moduleMetadata, Story, Meta } from '@storybook/angular';
+import { CalculatorService } from 'src/app/services/calculator.service';
 import { ButtonComponent } from '../button/button.component';
 import { DropdownInputComponent } from '../dropdown-input/dropdown-input.component';
 import { NumberInputComponent } from '../number-input/number-input.component';
@@ -19,12 +20,12 @@ export default {
                 SliderInputComponent,
                 NumberInputComponent,
                 ButtonComponent,
-                TipComponent,
+                TipComponent
             ],
             imports: [
                 CommonModule,
                 NgxSliderModule,
-                FormsModule,
+                FormsModule
             ],
         }),
     ],

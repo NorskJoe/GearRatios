@@ -15,7 +15,9 @@ export default {
                 ButtonComponent,
                 TipComponent,
             ],
-            imports: [CommonModule],
+            imports: [
+                CommonModule
+            ],
         }),
     ],
     excludeStories: /.*Data$/,
