@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { ButtonType } from 'src/app/models/button.model';
 import { CalculationResult, QuickCalculation } from 'src/app/models/calculation.model';
 import { CalculatorService } from 'src/app/services/calculator.service';
@@ -9,12 +9,14 @@ import { CalculatorService } from 'src/app/services/calculator.service';
   styleUrls: ['./quick-calculator.component.scss']
 })
 export class QuickCalculatorComponent {
+  @Output() calculation = new EventEmitter<CalculationResult>();
+  result: CalculationResult;
   quickCalculationValues: QuickCalculation = {
     chainringSize: 0,
     rearCogSize: 0
   };
   buttonTypes = ButtonType;
-  result: CalculationResult;
+
 
   constructor(private calculatorService: CalculatorService) { }
 

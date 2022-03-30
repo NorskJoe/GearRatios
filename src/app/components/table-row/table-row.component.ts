@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { Chainring } from 'src/app/models/calculation.model';
 
 export interface RowData {
@@ -13,14 +13,23 @@ export interface RowData {
   templateUrl: './table-row.component.html',
   styleUrls: ['./table-row.component.scss']
 })
-export class TableRowComponent implements OnInit {
+export class TableRowComponent implements OnInit, OnChanges {
   @Input() chainrings: Chainring[];
   @Input() currentCog: number;
   rowData: RowData;
 
   constructor() { }
 
+  ngOnChanges(): void {
+    this.load();
+  }
+
   ngOnInit(): void {
+    this.load();
+  }
+  
+  
+  load(): void {
     this.rowData = {
       header: this.chainrings[0].cogs[this.currentCog].cogSize,
       firstRing: this.chainrings[0].cogs[this.currentCog].ratio,
@@ -31,8 +40,8 @@ export class TableRowComponent implements OnInit {
         ? this.chainrings[2].cogs[this.currentCog].ratio
         : undefined,
     };
-  }
 
+  }
   // Assume ratio will always be between 0 and 5
   // Get colour based on gradient 0 = green, 5 = red
   public getColour(value: number) {

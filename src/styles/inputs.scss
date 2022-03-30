@@ -15,7 +15,8 @@ input[type="number"] {
 
 .input-label {
   color: $colour-darkblue;
-  text-align: center;
+  // text-align: center;
   margin-bottom: 5px;
-  display: block;
+  display: flex;
+  justify-content: center;
 }

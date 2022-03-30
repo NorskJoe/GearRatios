@@ -22,7 +22,7 @@ export class CustomCalculatorComponent {
   toRange = ToRange;
 
   constructor(private calculatorService: CalculatorService) { }
-
+  
   public getChainringLabel(current: number, total: number): string {
     let size = '';
     
@@ -32,23 +32,24 @@ export class CustomCalculatorComponent {
           size = 'smallest';
         }
         break;
-      case CHAINRING_SIZES.DOUBLE:
-        if (total === CHAINRING_SIZES.DOUBLE) {
-          size = 'largest';
-        } else {
-          size = 'middle';
-        }
-        break;
+        case CHAINRING_SIZES.DOUBLE:
+          if (total === CHAINRING_SIZES.DOUBLE) {
+            size = 'largest';
+          } else {
+            size = 'middle';
+          }
+          break;
       case CHAINRING_SIZES.TRIPLE:
         size = 'largest';
         break;
+      }
+      
+      return `No. of teeth on the ${size} chainring`;
     }
-
-    return `No. of teeth on the ${size} chainring`;
-  }
-
-  public calculate() {
-    this.result = this.calculatorService.calculateCustomRatios(this.customCalculationValues);
+    
+    public calculate() {
+      this.customCalculationValues.chainringSizes = this.customCalculationValues.chainringSizes.slice(0, this.customCalculationValues.numberOfChainrings);
+      this.result = this.calculatorService.calculateCustomRatios(this.customCalculationValues);
   }
 
 }
