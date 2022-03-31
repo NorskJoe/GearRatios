@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/Deadpool-ComponentLibrary'),
+      dir: require('path').join(__dirname, './coverage/gear-ratios'),
       subdir: '.',
       reporters: [
         { type: 'html' },

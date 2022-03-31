@@ -3,13 +3,17 @@
     "interfaces": [
         {
             "name": "CalculationResult",
-            "id": "interface-CalculationResult-96257c625bada941494de5b289c9b960",
+            "id": "interface-CalculationResult-20a71ec60dc5a4a76a778386cfc273f55452aeb1fbbbfd10b8062f8bb56f5d4728d4db0fd1ea8ea76640e29c5870ff1e100d75714eb9b8fff16177d798b54b56",
             "file": "src/app/models/calculation.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
             "type": "interface",
             "sourceCode": "export interface QuickCalculation {\r\n    chainringSize: number;\r\n    rearCogSize: number;\r\n}\r\n\r\nexport interface CustomCalculation {\r\n    numberOfChainrings?: number;\r\n    chainringSizes: number[];\r\n    casetteSpeed?: number;\r\n    minCasetteSpeed: number;\r\n    maxCasetteSpeed: number;\r\n}\r\n\r\nexport interface CalculationResult {\r\n    chainrings: Chainring[];\r\n}\r\n\r\nexport interface Chainring {\r\n    chainringSize: number;\r\n    cogs: Cog[];\r\n}\r\n\r\nexport interface Cog {\r\n    ratio: number;\r\n    cogSize: number;\r\n}\r\n",
             "properties": [
                 {
                     "name": "chainrings",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "Chainring[]",
                     "optional": false,
                     "description": "",
@@ -17,18 +21,22 @@
                 }
             ],
             "indexSignatures": [],
-            "kind": 150,
+            "kind": 165,
             "methods": []
         },
         {
             "name": "Chainring",
-            "id": "interface-Chainring-96257c625bada941494de5b289c9b960",
+            "id": "interface-Chainring-20a71ec60dc5a4a76a778386cfc273f55452aeb1fbbbfd10b8062f8bb56f5d4728d4db0fd1ea8ea76640e29c5870ff1e100d75714eb9b8fff16177d798b54b56",
             "file": "src/app/models/calculation.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
             "type": "interface",
             "sourceCode": "export interface QuickCalculation {\r\n    chainringSize: number;\r\n    rearCogSize: number;\r\n}\r\n\r\nexport interface CustomCalculation {\r\n    numberOfChainrings?: number;\r\n    chainringSizes: number[];\r\n    casetteSpeed?: number;\r\n    minCasetteSpeed: number;\r\n    maxCasetteSpeed: number;\r\n}\r\n\r\nexport interface CalculationResult {\r\n    chainrings: Chainring[];\r\n}\r\n\r\nexport interface Chainring {\r\n    chainringSize: number;\r\n    cogs: Cog[];\r\n}\r\n\r\nexport interface Cog {\r\n    ratio: number;\r\n    cogSize: number;\r\n}\r\n",
             "properties": [
                 {
                     "name": "chainringSize",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "number",
                     "optional": false,
                     "description": "",
@@ -36,6 +44,8 @@
                 },
                 {
                     "name": "cogs",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "Cog[]",
                     "optional": false,
                     "description": "",
@@ -43,18 +53,22 @@
                 }
             ],
             "indexSignatures": [],
-            "kind": 150,
+            "kind": 165,
             "methods": []
         },
         {
             "name": "Cog",
-            "id": "interface-Cog-96257c625bada941494de5b289c9b960",
+            "id": "interface-Cog-20a71ec60dc5a4a76a778386cfc273f55452aeb1fbbbfd10b8062f8bb56f5d4728d4db0fd1ea8ea76640e29c5870ff1e100d75714eb9b8fff16177d798b54b56",
             "file": "src/app/models/calculation.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
             "type": "interface",
             "sourceCode": "export interface QuickCalculation {\r\n    chainringSize: number;\r\n    rearCogSize: number;\r\n}\r\n\r\nexport interface CustomCalculation {\r\n    numberOfChainrings?: number;\r\n    chainringSizes: number[];\r\n    casetteSpeed?: number;\r\n    minCasetteSpeed: number;\r\n    maxCasetteSpeed: number;\r\n}\r\n\r\nexport interface CalculationResult {\r\n    chainrings: Chainring[];\r\n}\r\n\r\nexport interface Chainring {\r\n    chainringSize: number;\r\n    cogs: Cog[];\r\n}\r\n\r\nexport interface Cog {\r\n    ratio: number;\r\n    cogSize: number;\r\n}\r\n",
             "properties": [
                 {
                     "name": "cogSize",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "number",
                     "optional": false,
                     "description": "",
@@ -62,6 +76,8 @@
                 },
                 {
                     "name": "ratio",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "number",
                     "optional": false,
                     "description": "",
@@ -69,18 +85,22 @@
                 }
             ],
             "indexSignatures": [],
-            "kind": 150,
+            "kind": 165,
             "methods": []
         },
         {
             "name": "CustomCalculation",
-            "id": "interface-CustomCalculation-96257c625bada941494de5b289c9b960",
+            "id": "interface-CustomCalculation-20a71ec60dc5a4a76a778386cfc273f55452aeb1fbbbfd10b8062f8bb56f5d4728d4db0fd1ea8ea76640e29c5870ff1e100d75714eb9b8fff16177d798b54b56",
             "file": "src/app/models/calculation.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
             "type": "interface",
             "sourceCode": "export interface QuickCalculation {\r\n    chainringSize: number;\r\n    rearCogSize: number;\r\n}\r\n\r\nexport interface CustomCalculation {\r\n    numberOfChainrings?: number;\r\n    chainringSizes: number[];\r\n    casetteSpeed?: number;\r\n    minCasetteSpeed: number;\r\n    maxCasetteSpeed: number;\r\n}\r\n\r\nexport interface CalculationResult {\r\n    chainrings: Chainring[];\r\n}\r\n\r\nexport interface Chainring {\r\n    chainringSize: number;\r\n    cogs: Cog[];\r\n}\r\n\r\nexport interface Cog {\r\n    ratio: number;\r\n    cogSize: number;\r\n}\r\n",
             "properties": [
                 {
                     "name": "casetteSpeed",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "number",
                     "optional": true,
                     "description": "",
@@ -88,6 +108,8 @@
                 },
                 {
                     "name": "chainringSizes",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "number[]",
                     "optional": false,
                     "description": "",
@@ -95,6 +117,8 @@
                 },
                 {
                     "name": "maxCasetteSpeed",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "number",
                     "optional": false,
                     "description": "",
@@ -102,6 +126,8 @@
                 },
                 {
                     "name": "minCasetteSpeed",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "number",
                     "optional": false,
                     "description": "",
@@ -109,6 +135,8 @@
                 },
                 {
                     "name": "numberOfChainrings",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "number",
                     "optional": true,
                     "description": "",
@@ -116,18 +144,22 @@
                 }
             ],
             "indexSignatures": [],
-            "kind": 150,
+            "kind": 165,
             "methods": []
         },
         {
             "name": "NavLink",
-            "id": "interface-NavLink-b61a7f3f20bcf5beae94e0125380804a",
+            "id": "interface-NavLink-498a428b27206872d1649e98d69adcc8f8a9cba58084d2a45d415acef64ed5410cf9f81fce69232453fd5c49b95566a36e234329045a4a07b45ddfcdd439b1f6",
             "file": "src/app/models/navigation.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
             "type": "interface",
             "sourceCode": "export interface NavLink {\r\n    isActive: boolean;\r\n    linkName: string;\r\n    route: string[];\r\n}\r\n",
             "properties": [
                 {
                     "name": "isActive",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "boolean",
                     "optional": false,
                     "description": "",
@@ -135,6 +167,8 @@
                 },
                 {
                     "name": "linkName",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "string",
                     "optional": false,
                     "description": "",
@@ -142,6 +176,8 @@
                 },
                 {
                     "name": "route",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "string[]",
                     "optional": false,
                     "description": "",
@@ -149,18 +185,22 @@
                 }
             ],
             "indexSignatures": [],
-            "kind": 150,
+            "kind": 165,
             "methods": []
         },
         {
             "name": "QuickCalculation",
-            "id": "interface-QuickCalculation-96257c625bada941494de5b289c9b960",
+            "id": "interface-QuickCalculation-20a71ec60dc5a4a76a778386cfc273f55452aeb1fbbbfd10b8062f8bb56f5d4728d4db0fd1ea8ea76640e29c5870ff1e100d75714eb9b8fff16177d798b54b56",
             "file": "src/app/models/calculation.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
             "type": "interface",
             "sourceCode": "export interface QuickCalculation {\r\n    chainringSize: number;\r\n    rearCogSize: number;\r\n}\r\n\r\nexport interface CustomCalculation {\r\n    numberOfChainrings?: number;\r\n    chainringSizes: number[];\r\n    casetteSpeed?: number;\r\n    minCasetteSpeed: number;\r\n    maxCasetteSpeed: number;\r\n}\r\n\r\nexport interface CalculationResult {\r\n    chainrings: Chainring[];\r\n}\r\n\r\nexport interface Chainring {\r\n    chainringSize: number;\r\n    cogs: Cog[];\r\n}\r\n\r\nexport interface Cog {\r\n    ratio: number;\r\n    cogSize: number;\r\n}\r\n",
             "properties": [
                 {
                     "name": "chainringSize",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "number",
                     "optional": false,
                     "description": "",
@@ -168,6 +208,8 @@
                 },
                 {
                     "name": "rearCogSize",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "number",
                     "optional": false,
                     "description": "",
@@ -175,18 +217,22 @@
                 }
             ],
             "indexSignatures": [],
-            "kind": 150,
+            "kind": 165,
             "methods": []
         },
         {
             "name": "RowData",
-            "id": "interface-RowData-99f4423a62db8891bbb7651434333301",
+            "id": "interface-RowData-e8c7aa091a87596997eb53ae4375839b2debe881fb71818c9d1755f53b1463e9eee3be4a5f232e63cd073fa76cf15d2fdd1f47bae2ef4cfd63d526920786f8eb",
             "file": "src/app/components/table-row/table-row.component.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
             "type": "interface",
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\nimport { Chainring } from 'src/app/models/calculation.model';\r\n\r\nexport interface RowData {\r\n  header: number;\r\n  firstRing: number;\r\n  secondRing?: number;\r\n  thirdRing?: number;\r\n}\r\n\r\n@Component({\r\n  selector: '[app-table-row]',\r\n  templateUrl: './table-row.component.html',\r\n  styleUrls: ['./table-row.component.scss']\r\n})\r\nexport class TableRowComponent implements OnInit {\r\n  @Input() chainrings: Chainring[];\r\n  @Input() currentCog: number;\r\n  rowData: RowData;\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n    this.rowData = {\r\n      header: this.chainrings[0].cogs[this.currentCog].cogSize,\r\n      firstRing: this.chainrings[0].cogs[this.currentCog].ratio,\r\n      secondRing: this.chainrings.length >= 2\r\n         ? this.chainrings[1].cogs[this.currentCog].ratio\r\n         : undefined,\r\n      thirdRing: this.chainrings.length === 3\r\n        ? this.chainrings[2].cogs[this.currentCog].ratio\r\n        : undefined,\r\n    };\r\n  }\r\n\r\n  // Assume ratio will always be between 0 and 5\r\n  // Get colour based on gradient 0 = green, 5 = red\r\n  public getColour(value: number) {\r\n    const maxRatio: number = 5;\r\n    const maxGradient: number = 1;\r\n    const greenHue: number = 120;\r\n    \r\n    var hue=((maxGradient - ((value * maxGradient) / maxRatio)) * greenHue).toString(10);\r\n    return {'color': `hsl(${hue},100%,50%)`};\r\n}\r\n}\r\n",
+            "sourceCode": "import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';\r\nimport { Chainring } from 'src/app/models/calculation.model';\r\n\r\nexport interface RowData {\r\n  header: number;\r\n  firstRing: number;\r\n  secondRing?: number;\r\n  thirdRing?: number;\r\n}\r\n\r\n@Component({\r\n  selector: '[app-table-row]',\r\n  templateUrl: './table-row.component.html',\r\n  styleUrls: ['./table-row.component.scss']\r\n})\r\nexport class TableRowComponent implements OnInit, OnChanges {\r\n  @Input() chainrings: Chainring[];\r\n  @Input() currentCog: number;\r\n  rowData: RowData;\r\n\r\n  constructor() { }\r\n\r\n  ngOnChanges(): void {\r\n    this.load();\r\n  }\r\n\r\n  ngOnInit(): void {\r\n    this.load();\r\n  }\r\n  \r\n  \r\n  load(): void {\r\n    this.rowData = {\r\n      header: this.chainrings[0].cogs[this.currentCog].cogSize,\r\n      firstRing: this.chainrings[0].cogs[this.currentCog].ratio,\r\n      secondRing: this.chainrings.length >= 2\r\n         ? this.chainrings[1].cogs[this.currentCog].ratio\r\n         : undefined,\r\n      thirdRing: this.chainrings.length === 3\r\n        ? this.chainrings[2].cogs[this.currentCog].ratio\r\n        : undefined,\r\n    };\r\n\r\n  }\r\n  // Assume ratio will always be between 0 and 5\r\n  // Get colour based on gradient 0 = green, 5 = red\r\n  public getColour(value: number) {\r\n    const maxRatio: number = 5;\r\n    const maxGradient: number = 1;\r\n    const greenHue: number = 120;\r\n    \r\n    var hue=((maxGradient - ((value * maxGradient) / maxRatio)) * greenHue).toString(10);\r\n    return {'color': `hsl(${hue},100%,50%)`};\r\n}\r\n}\r\n",
             "properties": [
                 {
                     "name": "firstRing",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "number",
                     "optional": false,
                     "description": "",
@@ -194,6 +240,8 @@
                 },
                 {
                     "name": "header",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "number",
                     "optional": false,
                     "description": "",
@@ -201,6 +249,8 @@
                 },
                 {
                     "name": "secondRing",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "number",
                     "optional": true,
                     "description": "",
@@ -208,6 +258,8 @@
                 },
                 {
                     "name": "thirdRing",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "number",
                     "optional": true,
                     "description": "",
@@ -215,14 +267,14 @@
                 }
             ],
             "indexSignatures": [],
-            "kind": 150,
+            "kind": 165,
             "methods": []
         }
     ],
     "injectables": [
         {
             "name": "CalculatorService",
-            "id": "injectable-CalculatorService-1815b6f4da9a8998831483f7d5199028",
+            "id": "injectable-CalculatorService-667c059fbbfafaa58e04fb6a11b4fc7251f441e952310185af6fc5f8c169627729f416bd2631da9476cdfaf8a5e227e29817149aedd066f087827b94cc0e6eb0",
             "file": "src/app/services/calculator.service.ts",
             "properties": [],
             "methods": [
@@ -231,20 +283,26 @@
                     "args": [
                         {
                             "name": "inputs",
-                            "type": "CustomCalculation"
+                            "type": "CustomCalculation",
+                            "deprecated": false,
+                            "deprecationMessage": ""
                         }
                     ],
                     "optional": false,
                     "returnType": "CalculationResult",
                     "typeParameters": [],
                     "line": 25,
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "modifierKind": [
-                        114
+                        123
                     ],
                     "jsdoctags": [
                         {
                             "name": "inputs",
                             "type": "CustomCalculation",
+                            "deprecated": false,
+                            "deprecationMessage": "",
                             "tagName": {
                                 "text": "param"
                             }
@@ -256,20 +314,26 @@
                     "args": [
                         {
                             "name": "inputs",
-                            "type": "QuickCalculation"
+                            "type": "QuickCalculation",
+                            "deprecated": false,
+                            "deprecationMessage": ""
                         }
                     ],
                     "optional": false,
                     "returnType": "CalculationResult",
                     "typeParameters": [],
                     "line": 9,
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "modifierKind": [
-                        114
+                        123
                     ],
                     "jsdoctags": [
                         {
                             "name": "inputs",
                             "type": "QuickCalculation",
+                            "deprecated": false,
+                            "deprecationMessage": "",
                             "tagName": {
                                 "text": "param"
                             }
@@ -281,24 +345,32 @@
                     "args": [
                         {
                             "name": "cogSize",
-                            "type": "number"
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
                         },
                         {
                             "name": "chainringSize",
-                            "type": "number"
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
                         }
                     ],
                     "optional": false,
                     "returnType": "number",
                     "typeParameters": [],
                     "line": 47,
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "modifierKind": [
-                        112
+                        121
                     ],
                     "jsdoctags": [
                         {
                             "name": "cogSize",
                             "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
                             "tagName": {
                                 "text": "param"
                             }
@@ -306,6 +378,8 @@
                         {
                             "name": "chainringSize",
                             "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
                             "tagName": {
                                 "text": "param"
                             }
@@ -313,17 +387,22 @@
                     ]
                 }
             ],
+            "deprecated": false,
+            "deprecationMessage": "",
             "description": "",
+            "rawdescription": "\n",
             "sourceCode": "import { Injectable } from \"@angular/core\";\r\nimport { CalculationResult, QuickCalculation, CustomCalculation } from \"../models/calculation.model\";\r\n\r\n@Injectable({\r\n    providedIn: 'root',\r\n})\r\nexport class CalculatorService {\r\n\r\n    public calculateQuickRatios(inputs: QuickCalculation): CalculationResult {\r\n        return {\r\n            chainrings: [\r\n                {\r\n                    chainringSize: inputs.chainringSize,\r\n                    cogs: [\r\n                        {\r\n                            cogSize: inputs.rearCogSize,\r\n                            ratio: this.findRatio(inputs.rearCogSize, inputs.chainringSize)\r\n                        },\r\n                    ],\r\n                },\r\n            ],\r\n        };\r\n    }\r\n\r\n    public calculateCustomRatios(inputs: CustomCalculation): CalculationResult {\r\n        let result = { chainrings: [] } as CalculationResult;\r\n        let cogs: number[] = [];\r\n        for (let i = inputs.minCasetteSpeed; i <= inputs.maxCasetteSpeed; i++) {\r\n            cogs.push(i);\r\n        }\r\n\r\n        inputs.chainringSizes.forEach((chainring) => {\r\n            result.chainrings.push({\r\n                chainringSize: chainring,\r\n                cogs: cogs.map((cog) => {\r\n                    return {\r\n                        cogSize: cog,\r\n                        ratio: this.findRatio(cog, chainring)\r\n                    };\r\n                })\r\n            });\r\n        });\r\n\r\n        return result;\r\n    }\r\n\r\n    private findRatio(cogSize: number, chainringSize: number): number {\r\n        return +(chainringSize / cogSize).toFixed(2);\r\n    }\r\n}",
             "type": "injectable"
         }
     ],
+    "guards": [],
+    "interceptors": [],
     "classes": [],
     "directives": [],
     "components": [
         {
             "name": "AppComponent",
-            "id": "component-AppComponent-e86b09fdf4657c825084312bb5586a5c",
+            "id": "component-AppComponent-419a93903b4a23c0d2b41c36b68b3f30674928d82253de5cd216aaa50baf38af4e28ce5038621a0d1b17e0201eb9b477587f563575520cd8816be7e63ed2d13e",
             "file": "src/app/app.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -343,6 +422,8 @@
                 {
                     "name": "GitHubLink",
                     "defaultValue": "GITHUB_LINK",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "optional": false,
                     "description": "",
@@ -351,6 +432,8 @@
                 {
                     "name": "NavigationLinks",
                     "defaultValue": "NAVIGATION_LINKS",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "optional": false,
                     "description": "",
@@ -358,10 +441,12 @@
                 }
             ],
             "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
             "description": "",
-            "rawdescription": "",
+            "rawdescription": "\n",
             "type": "component",
             "sourceCode": "import { Component } from '@angular/core';\r\nimport { GITHUB_LINK, NAVIGATION_LINKS } from './utils/constants';\r\n\r\n@Component({\r\n  selector: 'app-root',\r\n  templateUrl: './app.component.html'\r\n})\r\nexport class AppComponent {\r\n  NavigationLinks = NAVIGATION_LINKS;\r\n  GitHubLink = GITHUB_LINK;\r\n}\r\n",
             "assetsDirs": [],
@@ -371,7 +456,7 @@
         },
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-688e48a832e2975b9a56c94b1e715e25",
+            "id": "component-ButtonComponent-94fc07fb0d059a64890578e77daae8a0dc91764f0419aee9c770c6a14328c41c5915273f7766435331ffa426a1823bec4c8b9d0ab429fe67a5925359673d6207",
             "file": "src/app/components/button/button.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -390,18 +475,27 @@
             "inputsClass": [
                 {
                     "name": "buttonLabel",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "line": 13,
-                    "type": "string"
+                    "type": "string",
+                    "decorators": []
                 },
                 {
                     "name": "buttonType",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "line": 11,
-                    "type": "ButtonType"
+                    "type": "ButtonType",
+                    "decorators": []
                 },
                 {
                     "name": "navItem",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "line": 12,
-                    "type": "NavLink"
+                    "type": "NavLink",
+                    "decorators": []
                 }
             ],
             "outputsClass": [],
@@ -409,6 +503,8 @@
                 {
                     "name": "buttonTypes",
                     "defaultValue": "ButtonType",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "optional": false,
                     "description": "",
@@ -416,10 +512,12 @@
                 }
             ],
             "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
             "description": "",
-            "rawdescription": "",
+            "rawdescription": "\n",
             "type": "component",
             "sourceCode": "import { Component, Input } from '@angular/core';\r\nimport { ButtonType } from 'src/app/models/button.model';\r\nimport { NavLink } from 'src/app/models/navigation.model';\r\n\r\n@Component({\r\n  selector: 'app-button',\r\n  templateUrl: './button.component.html',\r\n  styleUrls: ['./button.component.scss']\r\n})\r\nexport class ButtonComponent {\r\n  @Input() buttonType: ButtonType;\r\n  @Input() navItem: NavLink;\r\n  @Input() buttonLabel: string;\r\n  buttonTypes = ButtonType;\r\n\r\n  constructor() { }\r\n\r\n}\r\n",
             "assetsDirs": [],
@@ -433,6 +531,8 @@
             "constructorObj": {
                 "name": "constructor",
                 "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "args": [],
                 "line": 14
             },
@@ -440,7 +540,7 @@
         },
         {
             "name": "CustomCalculatorComponent",
-            "id": "component-CustomCalculatorComponent-8ac27d1f0a09c52f1d73343235650ed3",
+            "id": "component-CustomCalculatorComponent-485e40414669bfeb9e261c0fe0eb0a0cb4966481b696c7512617bcb5cde6c51462bb5916ce97f9c87e10521691a38f56054a9d56a0bd8747a7f415393a06c2d9",
             "file": "src/app/components/custom-calculator/custom-calculator.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -462,6 +562,8 @@
                 {
                     "name": "buttonTypes",
                     "defaultValue": "ButtonType",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "optional": false,
                     "description": "",
@@ -470,6 +572,8 @@
                 {
                     "name": "cogSizes",
                     "defaultValue": "COG_SIZES",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "optional": false,
                     "description": "",
@@ -478,6 +582,8 @@
                 {
                     "name": "customCalculationValues",
                     "defaultValue": "{\r\n    chainringSizes: [],\r\n    minCasetteSpeed: COG_SIZES.SMALLEST,\r\n    maxCasetteSpeed: COG_SIZES.LARGEST,\r\n  }",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "CustomCalculation",
                     "optional": false,
                     "description": "",
@@ -485,6 +591,8 @@
                 },
                 {
                     "name": "result",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "CalculationResult",
                     "optional": false,
                     "description": "",
@@ -493,6 +601,8 @@
                 {
                     "name": "toRange",
                     "defaultValue": "ToRange",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "optional": false,
                     "description": "",
@@ -507,8 +617,10 @@
                     "returnType": "void",
                     "typeParameters": [],
                     "line": 50,
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "modifierKind": [
-                        114
+                        123
                     ]
                 },
                 {
@@ -516,24 +628,32 @@
                     "args": [
                         {
                             "name": "current",
-                            "type": "number"
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
                         },
                         {
                             "name": "total",
-                            "type": "number"
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
                         }
                     ],
                     "optional": false,
                     "returnType": "string",
                     "typeParameters": [],
                     "line": 26,
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "modifierKind": [
-                        114
+                        123
                     ],
                     "jsdoctags": [
                         {
                             "name": "current",
                             "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
                             "tagName": {
                                 "text": "param"
                             }
@@ -541,6 +661,8 @@
                         {
                             "name": "total",
                             "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
                             "tagName": {
                                 "text": "param"
                             }
@@ -548,12 +670,14 @@
                     ]
                 }
             ],
+            "deprecated": false,
+            "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
             "description": "",
-            "rawdescription": "",
+            "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\r\nimport { ButtonType } from 'src/app/models/button.model';\r\nimport { CalculationResult, CustomCalculation } from 'src/app/models/calculation.model';\r\nimport { CalculatorService } from 'src/app/services/calculator.service';\r\nimport { CHAINRING_SIZES, COG_SIZES } from 'src/app/utils/constants';\r\nimport { ToRange } from 'src/app/utils/helper-functions';\r\n\r\n@Component({\r\n  selector: 'app-custom-calculator',\r\n  templateUrl: './custom-calculator.component.html',\r\n  styleUrls: ['./custom-calculator.component.scss']\r\n})\r\nexport class CustomCalculatorComponent {\r\n  buttonTypes = ButtonType;\r\n  cogSizes = COG_SIZES;\r\n  customCalculationValues: CustomCalculation = {\r\n    chainringSizes: [],\r\n    minCasetteSpeed: COG_SIZES.SMALLEST,\r\n    maxCasetteSpeed: COG_SIZES.LARGEST,\r\n  };\r\n  result: CalculationResult;\r\n  toRange = ToRange;\r\n\r\n  constructor(private calculatorService: CalculatorService) { }\r\n\r\n  public getChainringLabel(current: number, total: number): string {\r\n    let size = '';\r\n    \r\n    switch (current) {\r\n      case CHAINRING_SIZES.SINGLE:\r\n        if (total > CHAINRING_SIZES.SINGLE) {\r\n          size = 'smallest';\r\n        }\r\n        break;\r\n      case CHAINRING_SIZES.DOUBLE:\r\n        if (total === CHAINRING_SIZES.DOUBLE) {\r\n          size = 'largest';\r\n        } else {\r\n          size = 'middle';\r\n        }\r\n        break;\r\n      case CHAINRING_SIZES.TRIPLE:\r\n        size = 'largest';\r\n        break;\r\n    }\r\n\r\n    return `No. of teeth on the ${size} chainring`;\r\n  }\r\n\r\n  public calculate() {\r\n    console.log('clicked.  Values: ', this.customCalculationValues);\r\n    this.result = this.calculatorService.calculateCustomRatios(this.customCalculationValues);\r\n  }\r\n\r\n}\r\n",
+            "sourceCode": "import { Component } from '@angular/core';\r\nimport { ButtonType } from 'src/app/models/button.model';\r\nimport { CalculationResult, CustomCalculation } from 'src/app/models/calculation.model';\r\nimport { CalculatorService } from 'src/app/services/calculator.service';\r\nimport { CHAINRING_SIZES, COG_SIZES } from 'src/app/utils/constants';\r\nimport { ToRange } from 'src/app/utils/helper-functions';\r\n\r\n@Component({\r\n  selector: 'app-custom-calculator',\r\n  templateUrl: './custom-calculator.component.html',\r\n  styleUrls: ['./custom-calculator.component.scss']\r\n})\r\nexport class CustomCalculatorComponent {\r\n  buttonTypes = ButtonType;\r\n  cogSizes = COG_SIZES;\r\n  customCalculationValues: CustomCalculation = {\r\n    chainringSizes: [],\r\n    minCasetteSpeed: COG_SIZES.SMALLEST,\r\n    maxCasetteSpeed: COG_SIZES.LARGEST,\r\n  };\r\n  result: CalculationResult;\r\n  toRange = ToRange;\r\n\r\n  constructor(private calculatorService: CalculatorService) { }\r\n  \r\n  public getChainringLabel(current: number, total: number): string {\r\n    let size = '';\r\n    \r\n    switch (current) {\r\n      case CHAINRING_SIZES.SINGLE:\r\n        if (total > CHAINRING_SIZES.SINGLE) {\r\n          size = 'smallest';\r\n        }\r\n        break;\r\n        case CHAINRING_SIZES.DOUBLE:\r\n          if (total === CHAINRING_SIZES.DOUBLE) {\r\n            size = 'largest';\r\n          } else {\r\n            size = 'middle';\r\n          }\r\n          break;\r\n      case CHAINRING_SIZES.TRIPLE:\r\n        size = 'largest';\r\n        break;\r\n      }\r\n      \r\n      return `No. of teeth on the ${size} chainring`;\r\n    }\r\n    \r\n    public calculate() {\r\n      this.customCalculationValues.chainringSizes = this.customCalculationValues.chainringSizes.slice(0, this.customCalculationValues.numberOfChainrings);\r\n      this.result = this.calculatorService.calculateCustomRatios(this.customCalculationValues);\r\n  }\r\n\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -565,10 +689,14 @@
             "constructorObj": {
                 "name": "constructor",
                 "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "args": [
                     {
                         "name": "calculatorService",
-                        "type": "CalculatorService"
+                        "type": "CalculatorService",
+                        "deprecated": false,
+                        "deprecationMessage": ""
                     }
                 ],
                 "line": 22,
@@ -576,6 +704,8 @@
                     {
                         "name": "calculatorService",
                         "type": "CalculatorService",
+                        "deprecated": false,
+                        "deprecationMessage": "",
                         "tagName": {
                             "text": "param"
                         }
@@ -586,7 +716,7 @@
         },
         {
             "name": "DropdownInputComponent",
-            "id": "component-DropdownInputComponent-9698b6e97a36391ec277090436aacae8",
+            "id": "component-DropdownInputComponent-0e0d855693d794fcd9b99ab8c65031a08350c29c46f1b5ec5b5a0df8106952c9cdfe45be35ea9b458b74857b801d65c16cf4899f712e140640267f0bd0f1d813",
             "file": "src/app/components/dropdown-input/dropdown-input.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -605,18 +735,27 @@
             "inputsClass": [
                 {
                     "name": "hint",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "line": 11,
-                    "type": "string"
+                    "type": "string",
+                    "decorators": []
                 },
                 {
                     "name": "label",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "line": 10,
-                    "type": "string"
+                    "type": "string",
+                    "decorators": []
                 },
                 {
                     "name": "options",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "line": 9,
-                    "type": "any[]"
+                    "type": "any[]",
+                    "decorators": []
                 }
             ],
             "outputsClass": [],
@@ -624,6 +763,8 @@
                 {
                     "name": "showTip",
                     "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "boolean",
                     "optional": false,
                     "description": "",
@@ -638,15 +779,19 @@
                     "returnType": "void",
                     "typeParameters": [],
                     "line": 16,
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "modifierKind": [
-                        114
+                        123
                     ]
                 }
             ],
+            "deprecated": false,
+            "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
             "description": "",
-            "rawdescription": "",
+            "rawdescription": "\n",
             "type": "component",
             "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-dropdown-input',\r\n  templateUrl: './dropdown-input.component.html',\r\n  styleUrls: ['./dropdown-input.component.scss']\r\n})\r\nexport class DropdownInputComponent {\r\n  @Input() options: any[];\r\n  @Input() label: string;\r\n  @Input() hint: string;\r\n  showTip: boolean = false;\r\n\r\n  constructor() { }\r\n\r\n  public openTip() {\r\n    this.showTip = !this.showTip;\r\n  }\r\n\r\n}\r\n",
             "assetsDirs": [],
@@ -660,6 +805,8 @@
             "constructorObj": {
                 "name": "constructor",
                 "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "args": [],
                 "line": 12
             },
@@ -667,7 +814,7 @@
         },
         {
             "name": "FooterComponent",
-            "id": "component-FooterComponent-59488644fa297257dd40fa4659765622",
+            "id": "component-FooterComponent-cbf2e49bd647ce38c74e7019b50cbc89202cc63beb3c2beefdf2923604cb93e1ccbac7a4f06d0d9f21c5307fc3700952ae4514a8c473bc3ddd750e6b652d5287",
             "file": "src/app/components/footer/footer.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -686,17 +833,22 @@
             "inputsClass": [
                 {
                     "name": "githubLink",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "line": 9,
-                    "type": "string"
+                    "type": "string",
+                    "decorators": []
                 }
             ],
             "outputsClass": [],
             "propertiesClass": [],
             "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
             "description": "",
-            "rawdescription": "",
+            "rawdescription": "\n",
             "type": "component",
             "sourceCode": "import { Component, Input } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-footer',\r\n  templateUrl: './footer.component.html',\r\n  styleUrls: ['./footer.component.scss']\r\n})\r\nexport class FooterComponent {\r\n  @Input() githubLink: string;\r\n  constructor() { }\r\n\r\n}\r\n",
             "assetsDirs": [],
@@ -710,6 +862,8 @@
             "constructorObj": {
                 "name": "constructor",
                 "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "args": [],
                 "line": 9
             },
@@ -717,7 +871,7 @@
         },
         {
             "name": "NavBarComponent",
-            "id": "component-NavBarComponent-bf44af0b055726c653cbb190e05462ca",
+            "id": "component-NavBarComponent-0797e6bd62e5e7c333bb313e150b32cd7ebaea39820cabefd55150312a27f0449eed24040de178e9e184be54d84ff3f7417b1e7f5d0f7e17ea556f7554784bcb",
             "file": "src/app/components/nav-bar/nav-bar.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -736,8 +890,11 @@
             "inputsClass": [
                 {
                     "name": "navigationPages",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "line": 12,
-                    "type": "NavLink[]"
+                    "type": "NavLink[]",
+                    "decorators": []
                 }
             ],
             "outputsClass": [],
@@ -745,6 +902,8 @@
                 {
                     "name": "buttonTypes",
                     "defaultValue": "ButtonType",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "optional": false,
                     "description": "",
@@ -758,27 +917,35 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 17
+                    "line": 17,
+                    "deprecated": false,
+                    "deprecationMessage": ""
                 },
                 {
                     "name": "onNavClick",
                     "args": [
                         {
                             "name": "index",
-                            "type": "number"
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
                         }
                     ],
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
                     "line": 23,
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "modifierKind": [
-                        114
+                        123
                     ],
                     "jsdoctags": [
                         {
                             "name": "index",
                             "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
                             "tagName": {
                                 "text": "param"
                             }
@@ -786,10 +953,12 @@
                     ]
                 }
             ],
+            "deprecated": false,
+            "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
             "description": "",
-            "rawdescription": "",
+            "rawdescription": "\n",
             "type": "component",
             "sourceCode": "import { Component, OnInit, Input } from '@angular/core';\r\nimport { ButtonType } from 'src/app/models/button.model';\r\nimport { NavLink } from 'src/app/models/navigation.model';\r\nimport { NAVIGATION_LINKS } from 'src/app/utils/constants';\r\n\r\n@Component({\r\n  selector: 'app-nav-bar',\r\n  templateUrl: './nav-bar.component.html',\r\n  styleUrls: ['./nav-bar.component.scss']\r\n})\r\nexport class NavBarComponent implements OnInit {\r\n  @Input() navigationPages: NavLink[];\r\n  buttonTypes =  ButtonType;\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n    if (!this.navigationPages) {\r\n      this.navigationPages = NAVIGATION_LINKS;\r\n    }\r\n  }\r\n\r\n  public onNavClick(index: number) {\r\n    this.navigationPages.forEach((x,i) => {\r\n      x.isActive = i === index;\r\n    });\r\n  }\r\n}\r\n",
             "assetsDirs": [],
@@ -803,6 +972,8 @@
             "constructorObj": {
                 "name": "constructor",
                 "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "args": [],
                 "line": 13
             },
@@ -813,7 +984,7 @@
         },
         {
             "name": "NumberInputComponent",
-            "id": "component-NumberInputComponent-6a5ff241c07e45c83884cf0fc837c119",
+            "id": "component-NumberInputComponent-e741e8cdb116cc7374147e805aea3392b4f7efe169e437255fc276523f09376b4e26ed43eaf0735c5b4c3c99d33499f2585c5a9ff46c9ed4de2d7a286afa424f",
             "file": "src/app/components/number-input/number-input.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -832,13 +1003,19 @@
             "inputsClass": [
                 {
                     "name": "hint",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "line": 10,
-                    "type": "string"
+                    "type": "string",
+                    "decorators": []
                 },
                 {
                     "name": "label",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "line": 9,
-                    "type": "string"
+                    "type": "string",
+                    "decorators": []
                 }
             ],
             "outputsClass": [],
@@ -846,6 +1023,8 @@
                 {
                     "name": "showTip",
                     "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "boolean",
                     "optional": false,
                     "description": "",
@@ -860,21 +1039,25 @@
                     "returnType": "void",
                     "typeParameters": [],
                     "line": 15,
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "modifierKind": [
-                        114
+                        123
                     ]
                 }
             ],
+            "deprecated": false,
+            "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
             "description": "",
-            "rawdescription": "",
+            "rawdescription": "\n",
             "type": "component",
             "sourceCode": "import { Component, Input } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-number-input',\r\n  templateUrl: './number-input.component.html',\r\n  styleUrls: ['./number-input.component.scss']\r\n})\r\nexport class NumberInputComponent {\r\n  @Input() label: string;\r\n  @Input() hint: string;\r\n  showTip: boolean = false;\r\n\r\n  constructor() { }\r\n\r\n  public openTip() {\r\n    this.showTip = !this.showTip;\r\n  }\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".tip-icon {\r\n  font-size: 18px;\r\n  :hover {\r\n    cursor: pointer;\r\n  }\r\n}\r\n\r\n.input-number {\r\n  text-align: center;\r\n  max-width: 100px;\r\n  margin: 0 auto;\r\n}\r\n",
+                    "data": ".tip-icon {\r\n  :hover {\r\n    cursor: pointer;\r\n  }\r\n}\r\n\r\n.input-number {\r\n  text-align: center;\r\n  max-width: 100px;\r\n  margin: 0 auto;\r\n}\r\n",
                     "styleUrl": "./number-input.component.scss"
                 }
             ],
@@ -882,14 +1065,16 @@
             "constructorObj": {
                 "name": "constructor",
                 "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "args": [],
                 "line": 11
             },
-            "templateData": "<label class=\"input-label\">\r\n    {{ label }}\r\n    <span \r\n        class=\"tip-icon\"\r\n        (click)=\"openTip()\">\r\n        <i class=\"bi bi-question-circle-fill\"></i>\r\n    </span>\r\n</label>\r\n<app-tip [visible]=\"showTip\" [text]=\"hint\"></app-tip>\r\n<input class=\"input-number form-control\" type=\"number\" max=\"100\" />"
+            "templateData": "<label class=\"input-label\">\r\n    <app-tip [visible]=\"showTip\" [text]=\"hint\"></app-tip>\r\n    {{ label }} \r\n    <span \r\n        class=\"tip-icon\"\r\n        (click)=\"openTip()\">\r\n        <i class=\"bi bi-question-circle-fill\"></i>\r\n    </span>\r\n</label>\r\n<input class=\"input-number form-control\" type=\"number\" max=\"100\" />"
         },
         {
             "name": "QuickCalculatorComponent",
-            "id": "component-QuickCalculatorComponent-4d9a72027de3e331b831556c668cb67f",
+            "id": "component-QuickCalculatorComponent-aff61a081ca9efa3c593ba1f3afb4a2f4b0c2338f45ff62850bf6958fd576d286486bc8e88a857ec8595901d9c4cff93b5f4273e01eadef2b4f387837cf5927c",
             "file": "src/app/components/quick-calculator/quick-calculator.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -906,30 +1091,45 @@
             ],
             "viewProviders": [],
             "inputsClass": [],
-            "outputsClass": [],
+            "outputsClass": [
+                {
+                    "name": "calculation",
+                    "defaultValue": "new EventEmitter<CalculationResult>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "EventEmitter"
+                }
+            ],
             "propertiesClass": [
                 {
                     "name": "buttonTypes",
                     "defaultValue": "ButtonType",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "optional": false,
                     "description": "",
-                    "line": 16
+                    "line": 18
                 },
                 {
                     "name": "quickCalculationValues",
                     "defaultValue": "{\r\n    chainringSize: 0,\r\n    rearCogSize: 0\r\n  }",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "QuickCalculation",
                     "optional": false,
                     "description": "",
-                    "line": 12
+                    "line": 14
                 },
                 {
                     "name": "result",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "CalculationResult",
                     "optional": false,
                     "description": "",
-                    "line": 17
+                    "line": 13
                 }
             ],
             "methodsClass": [
@@ -939,18 +1139,22 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 21,
+                    "line": 23,
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "modifierKind": [
-                        114
+                        123
                     ]
                 }
             ],
+            "deprecated": false,
+            "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
             "description": "",
-            "rawdescription": "",
+            "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\r\nimport { ButtonType } from 'src/app/models/button.model';\r\nimport { CalculationResult, QuickCalculation } from 'src/app/models/calculation.model';\r\nimport { CalculatorService } from 'src/app/services/calculator.service';\r\n\r\n@Component({\r\n  selector: 'app-quick-calculator',\r\n  templateUrl: './quick-calculator.component.html',\r\n  styleUrls: ['./quick-calculator.component.scss']\r\n})\r\nexport class QuickCalculatorComponent {\r\n  quickCalculationValues: QuickCalculation = {\r\n    chainringSize: 0,\r\n    rearCogSize: 0\r\n  };\r\n  buttonTypes = ButtonType;\r\n  result: CalculationResult;\r\n\r\n  constructor(private calculatorService: CalculatorService) { }\r\n\r\n  public calculate() {\r\n    this.result = this.calculatorService.calculateQuickRatios(this.quickCalculationValues);\r\n  }\r\n\r\n}\r\n",
+            "sourceCode": "import { Component, EventEmitter, Output } from '@angular/core';\r\nimport { ButtonType } from 'src/app/models/button.model';\r\nimport { CalculationResult, QuickCalculation } from 'src/app/models/calculation.model';\r\nimport { CalculatorService } from 'src/app/services/calculator.service';\r\n\r\n@Component({\r\n  selector: 'app-quick-calculator',\r\n  templateUrl: './quick-calculator.component.html',\r\n  styleUrls: ['./quick-calculator.component.scss']\r\n})\r\nexport class QuickCalculatorComponent {\r\n  @Output() calculation = new EventEmitter<CalculationResult>();\r\n  result: CalculationResult;\r\n  quickCalculationValues: QuickCalculation = {\r\n    chainringSize: 0,\r\n    rearCogSize: 0\r\n  };\r\n  buttonTypes = ButtonType;\r\n\r\n\r\n  constructor(private calculatorService: CalculatorService) { }\r\n\r\n  public calculate() {\r\n    this.result = this.calculatorService.calculateQuickRatios(this.quickCalculationValues);\r\n  }\r\n\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -962,28 +1166,34 @@
             "constructorObj": {
                 "name": "constructor",
                 "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "args": [
                     {
                         "name": "calculatorService",
-                        "type": "CalculatorService"
+                        "type": "CalculatorService",
+                        "deprecated": false,
+                        "deprecationMessage": ""
                     }
                 ],
-                "line": 17,
+                "line": 18,
                 "jsdoctags": [
                     {
                         "name": "calculatorService",
                         "type": "CalculatorService",
+                        "deprecated": false,
+                        "deprecationMessage": "",
                         "tagName": {
                             "text": "param"
                         }
                     }
                 ]
             },
-            "templateData": "<div class=\"input-container\">   \r\n    <div class=\"row\">\r\n        <div class=\"col-md-4\">\r\n            <app-number-input\r\n                [(ngModel)]=\"quickCalculationValues.rearCogSize\"\r\n                ngDefaultControl \r\n                label=\"No. of teeth on casette\" \r\n                hint=\"Add the number of teeth on the cog of the rear casette\">\r\n            </app-number-input>\r\n        </div>\r\n        <div class=\"col-md-4\">\r\n            <app-number-input \r\n                [(ngModel)]=\"quickCalculationValues.chainringSize\"\r\n                ngDefaultControl    \r\n                label=\"No. of teeth on chainring\" \r\n                hint=\"Add the number of teeth on the front chainring\">\r\n            </app-number-input>\r\n        </div>\r\n        <div class=\"col-md-4\">\r\n            <app-button \r\n                [buttonType]=\"buttonTypes.FORM_SUBMIT\" \r\n                buttonLabel=\"Calculate\"\r\n                (click)=\"calculate()\">\r\n            </app-button>\r\n        </div>\r\n    </div>\r\n    <div class=\"row results-container\" *ngIf=\"result\">\r\n        <app-result-table [result]=\"result\"></app-result-table>\r\n    </div>\r\n</div>\r\n"
+            "templateData": "<div class=\"input-container\">   \r\n    <div class=\"row\">\r\n        <div class=\"col-md-4\">\r\n            <app-number-input \r\n                [(ngModel)]=\"quickCalculationValues.chainringSize\"\r\n                ngDefaultControl    \r\n                label=\"No. of teeth on chainring\" \r\n                hint=\"Add the number of teeth on the front chainring\">\r\n            </app-number-input>\r\n        </div>\r\n        <div class=\"col-md-4\">\r\n            <app-number-input\r\n                [(ngModel)]=\"quickCalculationValues.rearCogSize\"\r\n                ngDefaultControl \r\n                label=\"No. of teeth on casette\" \r\n                hint=\"Add the number of teeth on the cog of the rear casette\">\r\n            </app-number-input>\r\n        </div>\r\n        <div class=\"col-md-4\">\r\n            <app-button \r\n                [buttonType]=\"buttonTypes.FORM_SUBMIT\" \r\n                buttonLabel=\"Calculate\"\r\n                (click)=\"calculate()\">\r\n            </app-button>\r\n        </div>\r\n    </div>\r\n    <div class=\"row results-container\" *ngIf=\"result\">\r\n        <app-result-table [result]=\"result\"></app-result-table>\r\n    </div>\r\n</div>\r\n"
         },
         {
             "name": "ResultTableComponent",
-            "id": "component-ResultTableComponent-b1abe8fa2e392af7bdc6e92f27960e5a",
+            "id": "component-ResultTableComponent-6e9005c3f3c3da8bc1bd8ca7635f00434a8469c9ae3b85d602f9d7dbf87e270683f0e71387be5a650b0bae9c3dcb276e27d70e6c55836450fe5189055a4436b1",
             "file": "src/app/components/result-table/result-table.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1002,14 +1212,19 @@
             "inputsClass": [
                 {
                     "name": "result",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "line": 11,
-                    "type": "CalculationResult"
+                    "type": "CalculationResult",
+                    "decorators": []
                 }
             ],
             "outputsClass": [],
             "propertiesClass": [
                 {
                     "name": "numberOfCogs",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "number",
                     "optional": false,
                     "description": "",
@@ -1018,6 +1233,8 @@
                 {
                     "name": "toRange",
                     "defaultValue": "ToRange",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "optional": false,
                     "description": "",
@@ -1026,20 +1243,44 @@
             ],
             "methodsClass": [
                 {
+                    "name": "load",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 25,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngOnChanges",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 17,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
                     "name": "ngOnInit",
                     "args": [],
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 17
+                    "line": 21,
+                    "deprecated": false,
+                    "deprecationMessage": ""
                 }
             ],
+            "deprecated": false,
+            "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
             "description": "",
-            "rawdescription": "",
+            "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\nimport { CalculationResult } from 'src/app/models/calculation.model';\r\nimport { ToRange } from 'src/app/utils/helper-functions';\r\n\r\n@Component({\r\n  selector: 'app-result-table',\r\n  templateUrl: './result-table.component.html',\r\n  styleUrls: ['./result-table.component.scss']\r\n})\r\nexport class ResultTableComponent implements OnInit {\r\n  @Input() result: CalculationResult;\r\n  numberOfCogs: number;\r\n  toRange = ToRange;\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n    this.numberOfCogs = this.result.chainrings[0].cogs.length;\r\n  }\r\n}\r\n",
+            "sourceCode": "import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';\r\nimport { CalculationResult } from 'src/app/models/calculation.model';\r\nimport { ToRange } from 'src/app/utils/helper-functions';\r\n\r\n@Component({\r\n  selector: 'app-result-table',\r\n  templateUrl: './result-table.component.html',\r\n  styleUrls: ['./result-table.component.scss']\r\n})\r\nexport class ResultTableComponent implements OnInit, OnChanges {\r\n  @Input() result: CalculationResult;\r\n  numberOfCogs: number;\r\n  toRange = ToRange;\r\n\r\n  constructor() { }\r\n\r\n  ngOnChanges(): void {\r\n    this.load();\r\n  }\r\n\r\n  ngOnInit(): void {\r\n    this.load();\r\n  }\r\n\r\n  load(): void {\r\n    this.numberOfCogs = this.result.chainrings[0].cogs.length;\r\n  }\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -1051,17 +1292,20 @@
             "constructorObj": {
                 "name": "constructor",
                 "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "args": [],
                 "line": 13
             },
             "implements": [
-                "OnInit"
+                "OnInit",
+                "OnChanges"
             ],
             "templateData": "<table class=\"my-table\">\r\n    <thead>\r\n        <tr class=\"top-row\">\r\n            <th>Cog/Ring</th>\r\n            <ng-container *ngFor=\"let chainring of result.chainrings\">\r\n                <th scope=\"col\">{{ chainring.chainringSize}}</th>\r\n            </ng-container>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n        <tr *ngFor=\"let cog of toRange(numberOfCogs); let i = index;\" \r\n            app-table-row [chainrings]=\"result.chainrings\" [currentCog]=\"i\">\r\n        </tr>\r\n    </tbody>\r\n</table>"
         },
         {
             "name": "SliderInputComponent",
-            "id": "component-SliderInputComponent-46b8e29025368028d38aacc5b988fe1f",
+            "id": "component-SliderInputComponent-3e4e89049530902cdd568d02d7805fdfe61c264e6f37e990e0027e3767671e7332916feb35972dc640c3feaeb4e4502eb38ccf5b266c9a6b0ebef82f1d375594",
             "file": "src/app/components/slider-input/slider-input.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1080,45 +1324,67 @@
             "inputsClass": [
                 {
                     "name": "hint",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "line": 15,
-                    "type": "string"
+                    "type": "string",
+                    "decorators": []
                 },
                 {
                     "name": "label",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "line": 14,
-                    "type": "string"
+                    "type": "string",
+                    "decorators": []
                 },
                 {
                     "name": "maxRange",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "line": 10,
-                    "type": "number"
+                    "type": "number",
+                    "decorators": []
                 },
                 {
                     "name": "maxValue",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "line": 13,
-                    "type": "number"
+                    "type": "number",
+                    "decorators": []
                 },
                 {
                     "name": "minRange",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "line": 11,
-                    "type": "number"
+                    "type": "number",
+                    "decorators": []
                 },
                 {
                     "name": "minValue",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "line": 12,
-                    "type": "number"
+                    "type": "number",
+                    "decorators": []
                 }
             ],
             "outputsClass": [
                 {
                     "name": "maxValueChange",
                     "defaultValue": "new EventEmitter<number>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "line": 17,
                     "type": "EventEmitter"
                 },
                 {
                     "name": "minValueChange",
                     "defaultValue": "new EventEmitter<number>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "line": 16,
                     "type": "EventEmitter"
                 }
@@ -1126,6 +1392,8 @@
             "propertiesClass": [
                 {
                     "name": "options",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "Options",
                     "optional": false,
                     "description": "",
@@ -1134,6 +1402,8 @@
                 {
                     "name": "showTip",
                     "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "boolean",
                     "optional": false,
                     "description": "",
@@ -1147,7 +1417,9 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 24
+                    "line": 24,
+                    "deprecated": false,
+                    "deprecationMessage": ""
                 },
                 {
                     "name": "openTip",
@@ -1156,8 +1428,10 @@
                     "returnType": "void",
                     "typeParameters": [],
                     "line": 36,
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "modifierKind": [
-                        114
+                        123
                     ]
                 },
                 {
@@ -1167,21 +1441,25 @@
                     "returnType": "void",
                     "typeParameters": [],
                     "line": 31,
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "modifierKind": [
-                        114
+                        123
                     ]
                 }
             ],
+            "deprecated": false,
+            "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
             "description": "",
-            "rawdescription": "",
+            "rawdescription": "\n",
             "type": "component",
             "sourceCode": "import { Options } from '@angular-slider/ngx-slider';\r\nimport { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-slider-input',\r\n  templateUrl: './slider-input.component.html',\r\n  styleUrls: ['./slider-input.component.scss']\r\n})\r\nexport class SliderInputComponent implements OnInit {\r\n  @Input() maxRange: number;\r\n  @Input() minRange: number;\r\n  @Input() minValue: number;\r\n  @Input() maxValue: number;\r\n  @Input() label: string;\r\n  @Input() hint: string;\r\n  @Output() minValueChange = new EventEmitter<number>();\r\n  @Output() maxValueChange = new EventEmitter<number>();\r\n  options: Options;\r\n  showTip: boolean = false;\r\n\r\n  constructor() { }\r\n\r\n  \r\n  ngOnInit(): void {\r\n    this.options = {\r\n      floor: this.minRange,\r\n      ceil: this.maxRange,\r\n    };\r\n  }\r\n\r\n  public updateValues() {\r\n    this.minValueChange.emit(this.minValue);\r\n    this.maxValueChange.emit(this.maxValue);\r\n  }\r\n\r\n  public openTip() {\r\n    this.showTip = !this.showTip;\r\n  }\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "@import \"../../../styles/colours.scss\";\r\n\r\n::ng-deep {\r\n    .slider {\r\n        .ngx-slider-active::after {\r\n            background-color: transparent !important;\r\n        }\r\n        .ngx-slider-pointer::after {\r\n                background: none !important;\r\n                background-color: transparent !important;\r\n        }\r\n        .ngx-slider {\r\n            .ngx-slider-pointer {\r\n                background-color: $colour-darkblue;\r\n            }\r\n            .ngx-slider-selection {\r\n                background: $colour-darkblue;\r\n            }\r\n            .ngx-slider-bubble {\r\n                color: $colour-lightblue;\r\n            }\r\n            .ngx-slider-limit {\r\n                display: none !important;\r\n            }\r\n        }\r\n    }\r\n}\r\n",
+                    "data": "@import \"../../../styles/colours.scss\";\r\n\r\n::ng-deep {\r\n    .slider {\r\n        .ngx-slider-active::after {\r\n            background-color: transparent !important;\r\n        }\r\n        .ngx-slider-pointer::after {\r\n                background: none !important;\r\n                background-color: transparent !important;\r\n        }\r\n        .ngx-slider {\r\n            .ngx-slider-pointer {\r\n                background-color: $colour-darkblue;\r\n            }\r\n            .ngx-slider-selection {\r\n                background: $colour-darkblue;\r\n            }\r\n            .ngx-slider-bubble {\r\n                color: $colour-lightblue;\r\n            }\r\n            .ngx-slider-limit {\r\n                display: none !important;\r\n            }\r\n        }\r\n    }\r\n}",
                     "styleUrl": "./slider-input.component.scss"
                 }
             ],
@@ -1189,17 +1467,19 @@
             "constructorObj": {
                 "name": "constructor",
                 "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "args": [],
                 "line": 19
             },
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<label class=\"input-label\">\r\n    {{ label }}\r\n    <span \r\n    class=\"tip-icon\"\r\n    (click)=\"openTip()\">\r\n    <i class=\"bi bi-question-circle-fill\"></i>\r\n</span>\r\n</label>\r\n<app-tip [visible]=\"showTip\" [text]=\"hint\"></app-tip>\r\n<div class=\"slider\">\r\n    <ngx-slider\r\n        [(value)]=\"minValue\"\r\n        [(highValue)]=\"maxValue\"\r\n        [options]=\"options\"\r\n        (valueChange)=\"updateValues()\"\r\n        (highValueChange)=\"updateValues()\">\r\n    </ngx-slider>\r\n</div>"
+            "templateData": "<label class=\"input-label\">\r\n    <app-tip [visible]=\"showTip\" [text]=\"hint\"></app-tip>\r\n    {{ label }}\r\n    <span \r\n    class=\"tip-icon\"\r\n    (click)=\"openTip()\">\r\n    <i class=\"bi bi-question-circle-fill\"></i>\r\n</span>\r\n</label>\r\n<div class=\"slider\">\r\n    <ngx-slider\r\n        [(value)]=\"minValue\"\r\n        [(highValue)]=\"maxValue\"\r\n        [options]=\"options\"\r\n        (valueChange)=\"updateValues()\"\r\n        (highValueChange)=\"updateValues()\">\r\n    </ngx-slider>\r\n</div>"
         },
         {
             "name": "TableRowComponent",
-            "id": "component-TableRowComponent-99f4423a62db8891bbb7651434333301",
+            "id": "component-TableRowComponent-e8c7aa091a87596997eb53ae4375839b2debe881fb71818c9d1755f53b1463e9eee3be4a5f232e63cd073fa76cf15d2fdd1f47bae2ef4cfd63d526920786f8eb",
             "file": "src/app/components/table-row/table-row.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1218,19 +1498,27 @@
             "inputsClass": [
                 {
                     "name": "chainrings",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "line": 17,
-                    "type": "Chainring[]"
+                    "type": "Chainring[]",
+                    "decorators": []
                 },
                 {
                     "name": "currentCog",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "line": 18,
-                    "type": "number"
+                    "type": "number",
+                    "decorators": []
                 }
             ],
             "outputsClass": [],
             "propertiesClass": [
                 {
                     "name": "rowData",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "RowData",
                     "optional": false,
                     "description": "",
@@ -1243,20 +1531,26 @@
                     "args": [
                         {
                             "name": "value",
-                            "type": "number"
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
                         }
                     ],
                     "optional": false,
-                    "returnType": "{ 'color': string; }",
+                    "returnType": "{ color: string; }",
                     "typeParameters": [],
-                    "line": 38,
+                    "line": 47,
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "modifierKind": [
-                        114
+                        123
                     ],
                     "jsdoctags": [
                         {
                             "name": "value",
                             "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
                             "tagName": {
                                 "text": "param"
                             }
@@ -1264,20 +1558,44 @@
                     ]
                 },
                 {
+                    "name": "load",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 32,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngOnChanges",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 23,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
                     "name": "ngOnInit",
                     "args": [],
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 23
+                    "line": 27,
+                    "deprecated": false,
+                    "deprecationMessage": ""
                 }
             ],
+            "deprecated": false,
+            "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
             "description": "",
-            "rawdescription": "",
+            "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\r\nimport { Chainring } from 'src/app/models/calculation.model';\r\n\r\nexport interface RowData {\r\n  header: number;\r\n  firstRing: number;\r\n  secondRing?: number;\r\n  thirdRing?: number;\r\n}\r\n\r\n@Component({\r\n  selector: '[app-table-row]',\r\n  templateUrl: './table-row.component.html',\r\n  styleUrls: ['./table-row.component.scss']\r\n})\r\nexport class TableRowComponent implements OnInit {\r\n  @Input() chainrings: Chainring[];\r\n  @Input() currentCog: number;\r\n  rowData: RowData;\r\n\r\n  constructor() { }\r\n\r\n  ngOnInit(): void {\r\n    this.rowData = {\r\n      header: this.chainrings[0].cogs[this.currentCog].cogSize,\r\n      firstRing: this.chainrings[0].cogs[this.currentCog].ratio,\r\n      secondRing: this.chainrings.length >= 2\r\n         ? this.chainrings[1].cogs[this.currentCog].ratio\r\n         : undefined,\r\n      thirdRing: this.chainrings.length === 3\r\n        ? this.chainrings[2].cogs[this.currentCog].ratio\r\n        : undefined,\r\n    };\r\n  }\r\n\r\n  // Assume ratio will always be between 0 and 5\r\n  // Get colour based on gradient 0 = green, 5 = red\r\n  public getColour(value: number) {\r\n    const maxRatio: number = 5;\r\n    const maxGradient: number = 1;\r\n    const greenHue: number = 120;\r\n    \r\n    var hue=((maxGradient - ((value * maxGradient) / maxRatio)) * greenHue).toString(10);\r\n    return {'color': `hsl(${hue},100%,50%)`};\r\n}\r\n}\r\n",
+            "sourceCode": "import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';\r\nimport { Chainring } from 'src/app/models/calculation.model';\r\n\r\nexport interface RowData {\r\n  header: number;\r\n  firstRing: number;\r\n  secondRing?: number;\r\n  thirdRing?: number;\r\n}\r\n\r\n@Component({\r\n  selector: '[app-table-row]',\r\n  templateUrl: './table-row.component.html',\r\n  styleUrls: ['./table-row.component.scss']\r\n})\r\nexport class TableRowComponent implements OnInit, OnChanges {\r\n  @Input() chainrings: Chainring[];\r\n  @Input() currentCog: number;\r\n  rowData: RowData;\r\n\r\n  constructor() { }\r\n\r\n  ngOnChanges(): void {\r\n    this.load();\r\n  }\r\n\r\n  ngOnInit(): void {\r\n    this.load();\r\n  }\r\n  \r\n  \r\n  load(): void {\r\n    this.rowData = {\r\n      header: this.chainrings[0].cogs[this.currentCog].cogSize,\r\n      firstRing: this.chainrings[0].cogs[this.currentCog].ratio,\r\n      secondRing: this.chainrings.length >= 2\r\n         ? this.chainrings[1].cogs[this.currentCog].ratio\r\n         : undefined,\r\n      thirdRing: this.chainrings.length === 3\r\n        ? this.chainrings[2].cogs[this.currentCog].ratio\r\n        : undefined,\r\n    };\r\n\r\n  }\r\n  // Assume ratio will always be between 0 and 5\r\n  // Get colour based on gradient 0 = green, 5 = red\r\n  public getColour(value: number) {\r\n    const maxRatio: number = 5;\r\n    const maxGradient: number = 1;\r\n    const greenHue: number = 120;\r\n    \r\n    var hue=((maxGradient - ((value * maxGradient) / maxRatio)) * greenHue).toString(10);\r\n    return {'color': `hsl(${hue},100%,50%)`};\r\n}\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -1289,17 +1607,20 @@
             "constructorObj": {
                 "name": "constructor",
                 "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "args": [],
                 "line": 19
             },
             "implements": [
-                "OnInit"
+                "OnInit",
+                "OnChanges"
             ],
             "templateData": "<th>{{rowData.header}}</th>\r\n<td [ngStyle]=\"getColour(rowData.firstRing)\">{{rowData.firstRing}}</td>\r\n<td *ngIf=\"rowData.secondRing\" \r\n    [ngStyle]=\"getColour(rowData.secondRing)\">{{rowData.secondRing}}</td>\r\n<td *ngIf=\"rowData.thirdRing\" \r\n    [ngStyle]=\"getColour(rowData.thirdRing)\">{{rowData.thirdRing}}</td>\r\n"
         },
         {
             "name": "TipComponent",
-            "id": "component-TipComponent-858d3678eb0d77889d99ba2267c87bc4",
+            "id": "component-TipComponent-e40666a8b9200260b9b0634a68c44e25b3cf9ea64f07a23b8667e72413b151aa909f0b8f1fe3a4acbdb60f5ed2f080e54b2b5fc617009cfc6272ab9d97a5d606",
             "file": "src/app/components/tip/tip.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1318,28 +1639,36 @@
             "inputsClass": [
                 {
                     "name": "text",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "line": 10,
-                    "type": "string"
+                    "type": "string",
+                    "decorators": []
                 },
                 {
                     "name": "visible",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "line": 9,
-                    "type": "boolean"
+                    "type": "boolean",
+                    "decorators": []
                 }
             ],
             "outputsClass": [],
             "propertiesClass": [],
             "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
             "description": "",
-            "rawdescription": "",
+            "rawdescription": "\n",
             "type": "component",
             "sourceCode": "import { Component, Input } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-tip',\r\n  templateUrl: './tip.component.html',\r\n  styleUrls: ['./tip.component.scss']\r\n})\r\nexport class TipComponent {\r\n  @Input() visible: boolean;\r\n  @Input() text: string;\r\n  \r\n  constructor() { }\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "@import '../../../styles/colours.scss';\r\n\r\n.show-tip {\r\n    position: absolute;\r\n    background-color: $colour-lightgrey;\r\n    color: $colour-darkgrey;\r\n    border-radius: 8px;\r\n    max-width: 200px;\r\n    padding: 10px 10px;\r\n}\r\n\r\n.hide-tip {\r\n    display: none;\r\n}\r\n\r\n.hint-icon {\r\n    font-size: 18px;\r\n}",
+                    "data": "@import '../../../styles/colours.scss';\r\n\r\n.show-tip {\r\n    position: absolute;\r\n    background-color: $colour-lightgrey;\r\n    color: $colour-darkgrey;\r\n    border-radius: 8px;\r\n    max-width: 200px;\r\n    padding: 10px 10px;\r\n    margin-top: 25px;\r\n    z-index: 10;\r\n}\r\n\r\n.hide-tip {\r\n    display: none;\r\n}\r\n\r\n.hint-icon {\r\n    font-size: 16px;\r\n}",
                     "styleUrl": "./tip.component.scss"
                 }
             ],
@@ -1347,6 +1676,8 @@
             "constructorObj": {
                 "name": "constructor",
                 "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "args": [],
                 "line": 10
             },
@@ -1356,6 +1687,13 @@
     "modules": [
         {
             "name": "AppModule",
+            "id": "module-AppModule-341e2de1efd1b83a10d8828c4891d90e017607f91023e4c6d8b58dfa797216a180f63cec80890902ecab6d7af1bbf5e98a3b4f9aa34da1eeb6f215621206df64",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { BrowserModule } from '@angular/platform-browser';\r\n\r\nimport { AppRoutingModule } from './app-routing.module';\r\nimport { AppComponent } from './app.component';\r\nimport { NavBarComponent } from './components/nav-bar/nav-bar.component';\r\nimport { FooterComponent } from './components/footer/footer.component';\r\nimport { CustomCalculatorComponent } from './components/custom-calculator/custom-calculator.component';\r\nimport { QuickCalculatorComponent } from './components/quick-calculator/quick-calculator.component';\r\nimport { ButtonComponent } from './components/button/button.component';\r\nimport { NumberInputComponent } from './components/number-input/number-input.component';\r\nimport { TipComponent } from './components/tip/tip.component';\r\nimport { FormsModule } from '@angular/forms';\r\nimport { DropdownInputComponent } from './components/dropdown-input/dropdown-input.component';\r\nimport { NgxSliderModule } from '@angular-slider/ngx-slider';\r\nimport { SliderInputComponent } from './components/slider-input/slider-input.component';\r\nimport { CalculatorService } from './services/calculator.service';\r\nimport { ResultTableComponent } from './components/result-table/result-table.component';\r\nimport { TableRowComponent } from './components/table-row/table-row.component';\r\n\r\n@NgModule({\r\n  declarations: [\r\n    AppComponent,\r\n    NavBarComponent,\r\n    FooterComponent,\r\n    CustomCalculatorComponent,\r\n    QuickCalculatorComponent,\r\n    ButtonComponent,\r\n    NumberInputComponent,\r\n    TipComponent,\r\n    DropdownInputComponent,\r\n    SliderInputComponent,\r\n    ResultTableComponent,\r\n    TableRowComponent,\r\n  ],\r\n  imports: [\r\n    BrowserModule,\r\n    AppRoutingModule,\r\n    FormsModule,\r\n    NgxSliderModule,\r\n  ],\r\n  providers: [\r\n    CalculatorService,\r\n  ],\r\n  bootstrap: [AppComponent],\r\n})\r\nexport class AppModule { }\r\n",
             "children": [
                 {
                     "type": "providers",
@@ -1434,6 +1772,13 @@
         },
         {
             "name": "AppRoutingModule",
+            "id": "module-AppRoutingModule-16d07c40db677a4652e4ae9aed9250df3b45455fcfdd25e36e1c492ecdfd6191c071de7d537d148e8c53667f4f63657ff4de9e4e3f88173da64fb7411229f796",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app-routing.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\r\nimport { RouterModule, Routes } from '@angular/router';\r\nimport { CustomCalculatorComponent } from './components/custom-calculator/custom-calculator.component';\r\nimport { QuickCalculatorComponent } from './components/quick-calculator/quick-calculator.component';\r\n\r\nconst routes: Routes = [\r\n  { path: 'custom', component: CustomCalculatorComponent },\r\n  { path: 'quick', component: QuickCalculatorComponent },\r\n  { path: '', redirectTo: 'custom', pathMatch: 'full' },\r\n  { path: '**', redirectTo: 'custom', pathMatch: 'full' },\r\n];\r\n\r\n@NgModule({\r\n  imports: [RouterModule.forRoot(routes)],\r\n  exports: [RouterModule]\r\n})\r\nexport class AppRoutingModule { }\r\n",
             "children": [
                 {
                     "type": "providers",
@@ -1469,6 +1814,8 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/components/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -1477,6 +1824,8 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/utils/constants.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "object",
                 "defaultValue": "{\r\n  SINGLE: 1,\r\n  DOUBLE: 2,\r\n  TRIPLE: 3,\r\n}"
             },
@@ -1485,6 +1834,8 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/utils/constants.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "object",
                 "defaultValue": "{\r\n  SMALLEST: 10,\r\n  LARGEST: 46,\r\n}"
             },
@@ -1493,6 +1844,8 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
             },
@@ -1500,15 +1853,9 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/footer/footer.stories.ts",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/components/custom-calculator/custom-calculator.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -1517,6 +1864,8 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/components/dropdown-input/dropdown-input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -1525,6 +1874,18 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/components/number-input/number-input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/footer/footer.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -1533,6 +1894,8 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/components/nav-bar/nav-bar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -1541,6 +1904,8 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/components/quick-calculator/quick-calculator.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -1549,6 +1914,8 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/components/slider-input/slider-inputs.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -1557,6 +1924,8 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/components/tip/tip.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -1564,23 +1933,29 @@
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/environments/environment.prod.ts",
+                "file": "src/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "object",
-                "defaultValue": "{\r\n  production: true\r\n}"
+                "defaultValue": "{\r\n  production: false\r\n}"
             },
             {
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/environments/environment.ts",
+                "file": "src/environments/environment.prod.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "object",
-                "defaultValue": "{\r\n  production: false\r\n}"
+                "defaultValue": "{\r\n  production: true\r\n}"
             },
             {
                 "name": "GITHUB_LINK",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/utils/constants.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "string",
                 "defaultValue": "'https://github.com/NorskJoe'"
             },
@@ -1589,6 +1964,8 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/components/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -1597,6 +1974,8 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/components/nav-bar/nav-bar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -1605,6 +1984,8 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/utils/constants.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "[\r\n    {\r\n      isActive: true,\r\n      linkName: 'Custom Mode',\r\n      route: ['/custom']\r\n    },\r\n    {\r\n      isActive: false,\r\n      linkName: 'Quick Mode',\r\n      route: ['/quick']\r\n    }\r\n] as NavLink[]"
             },
@@ -1613,6 +1994,8 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "literal type"
             },
             {
@@ -1620,6 +2003,8 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/components/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -1627,23 +2012,9 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/components/button/button.stories.ts",
-                "type": "Story<ButtonComponent>",
-                "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/components/footer/footer.stories.ts",
-                "type": "Story<FooterComponent>",
-                "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/app/components/custom-calculator/custom-calculator.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "Story<CustomCalculatorComponent>",
                 "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
             },
@@ -1651,7 +2022,19 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/app/components/button/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/app/components/dropdown-input/dropdown-input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "Story<DropdownInputComponent>",
                 "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
             },
@@ -1660,6 +2043,8 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/components/number-input/number-input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "Story<NumberInputComponent>",
                 "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
             },
@@ -1667,7 +2052,19 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/app/components/footer/footer.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<FooterComponent>",
+                "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/app/components/nav-bar/nav-bar.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "Story<NavBarComponent>",
                 "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
             },
@@ -1676,6 +2073,8 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/components/quick-calculator/quick-calculator.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "Story<QuickCalculatorComponent>",
                 "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
             },
@@ -1684,6 +2083,8 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/components/slider-input/slider-inputs.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "Story<SliderInputComponent>",
                 "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
             },
@@ -1692,6 +2093,8 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/components/tip/tip.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "Story<TipComponent>",
                 "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
             }
@@ -1702,16 +2105,24 @@
                 "file": "src/app/utils/helper-functions.ts",
                 "ctype": "miscellaneous",
                 "subtype": "function",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "description": "",
                 "args": [
                     {
-                        "name": "i"
+                        "name": "i",
+                        "type": "number",
+                        "deprecated": false,
+                        "deprecationMessage": ""
                     }
                 ],
                 "returnType": "number[]",
                 "jsdoctags": [
                     {
                         "name": "i",
+                        "type": "number",
+                        "deprecated": false,
+                        "deprecationMessage": "",
                         "tagName": {
                             "text": "param"
                         }
@@ -1725,17 +2136,25 @@
                 "name": "ButtonType",
                 "childs": [
                     {
-                        "name": "NAVIGATION_ACTIVE"
+                        "name": "NAVIGATION_ACTIVE",
+                        "deprecated": false,
+                        "deprecationMessage": ""
                     },
                     {
-                        "name": "NAVIGATION_INACTIVE"
+                        "name": "NAVIGATION_INACTIVE",
+                        "deprecated": false,
+                        "deprecationMessage": ""
                     },
                     {
-                        "name": "FORM_SUBMIT"
+                        "name": "FORM_SUBMIT",
+                        "deprecated": false,
+                        "deprecationMessage": ""
                     }
                 ],
                 "ctype": "miscellaneous",
                 "subtype": "enum",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "description": "",
                 "file": "src/app/models/button.model.ts"
             },
@@ -1744,15 +2163,21 @@
                 "childs": [
                     {
                         "name": "QUICK",
-                        "value": "1"
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": 1
                     },
                     {
                         "name": "CUSTOM",
-                        "value": "2"
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "value": 2
                     }
                 ],
                 "ctype": "miscellaneous",
                 "subtype": "enum",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "description": "",
                 "file": "src/app/models/input.model.ts"
             }
@@ -1764,6 +2189,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/components/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
                 },
@@ -1772,6 +2199,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/components/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
                 },
@@ -1780,6 +2209,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/components/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
                 },
@@ -1788,6 +2219,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/components/button/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "Story<ButtonComponent>",
                     "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
                 }
@@ -1798,6 +2231,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/utils/constants.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "object",
                     "defaultValue": "{\r\n  SINGLE: 1,\r\n  DOUBLE: 2,\r\n  TRIPLE: 3,\r\n}"
                 },
@@ -1806,6 +2241,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/utils/constants.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "object",
                     "defaultValue": "{\r\n  SMALLEST: 10,\r\n  LARGEST: 46,\r\n}"
                 },
@@ -1814,6 +2251,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/utils/constants.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "string",
                     "defaultValue": "'https://github.com/NorskJoe'"
                 },
@@ -1822,6 +2261,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/utils/constants.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "[\r\n    {\r\n      isActive: true,\r\n      linkName: 'Custom Mode',\r\n      route: ['/custom']\r\n    },\r\n    {\r\n      isActive: false,\r\n      linkName: 'Quick Mode',\r\n      route: ['/quick']\r\n    }\r\n] as NavLink[]"
                 }
@@ -1832,6 +2273,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
                 },
@@ -1840,25 +2283,9 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "literal type"
-                }
-            ],
-            "src/app/components/footer/footer.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/footer/footer.stories.ts",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/footer/footer.stories.ts",
-                    "type": "Story<FooterComponent>",
-                    "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
                 }
             ],
             "src/app/components/custom-calculator/custom-calculator.stories.ts": [
@@ -1867,6 +2294,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/components/custom-calculator/custom-calculator.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
                 },
@@ -1875,6 +2304,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/components/custom-calculator/custom-calculator.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "Story<CustomCalculatorComponent>",
                     "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
                 }
@@ -1885,6 +2316,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/components/dropdown-input/dropdown-input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
                 },
@@ -1893,6 +2326,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/components/dropdown-input/dropdown-input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "Story<DropdownInputComponent>",
                     "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
                 }
@@ -1903,6 +2338,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/components/number-input/number-input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
                 },
@@ -1911,7 +2348,31 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/components/number-input/number-input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "Story<NumberInputComponent>",
+                    "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
+                }
+            ],
+            "src/app/components/footer/footer.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/footer/footer.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/footer/footer.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<FooterComponent>",
                     "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
                 }
             ],
@@ -1921,6 +2382,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/components/nav-bar/nav-bar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
                 },
@@ -1929,6 +2392,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/components/nav-bar/nav-bar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
                 },
@@ -1937,6 +2402,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/components/nav-bar/nav-bar.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "Story<NavBarComponent>",
                     "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
                 }
@@ -1947,6 +2414,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/components/quick-calculator/quick-calculator.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
                 },
@@ -1955,6 +2424,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/components/quick-calculator/quick-calculator.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "Story<QuickCalculatorComponent>",
                     "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
                 }
@@ -1965,6 +2436,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/components/slider-input/slider-inputs.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
                 },
@@ -1973,6 +2446,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/components/slider-input/slider-inputs.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "Story<SliderInputComponent>",
                     "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
                 }
@@ -1983,6 +2458,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/components/tip/tip.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
                 },
@@ -1991,18 +2468,10 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/app/components/tip/tip.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "Story<TipComponent>",
                     "defaultValue": "args => ({\r\n    props: {\r\n        ...args,\r\n    },\r\n})"
-                }
-            ],
-            "src/environments/environment.prod.ts": [
-                {
-                    "name": "environment",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/environments/environment.prod.ts",
-                    "type": "object",
-                    "defaultValue": "{\r\n  production: true\r\n}"
                 }
             ],
             "src/environments/environment.ts": [
@@ -2011,8 +2480,22 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "object",
                     "defaultValue": "{\r\n  production: false\r\n}"
+                }
+            ],
+            "src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.prod.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\r\n  production: true\r\n}"
                 }
             ]
         },
@@ -2023,16 +2506,24 @@
                     "file": "src/app/utils/helper-functions.ts",
                     "ctype": "miscellaneous",
                     "subtype": "function",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "description": "",
                     "args": [
                         {
-                            "name": "i"
+                            "name": "i",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
                         }
                     ],
                     "returnType": "number[]",
                     "jsdoctags": [
                         {
                             "name": "i",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
                             "tagName": {
                                 "text": "param"
                             }
@@ -2047,17 +2538,25 @@
                     "name": "ButtonType",
                     "childs": [
                         {
-                            "name": "NAVIGATION_ACTIVE"
+                            "name": "NAVIGATION_ACTIVE",
+                            "deprecated": false,
+                            "deprecationMessage": ""
                         },
                         {
-                            "name": "NAVIGATION_INACTIVE"
+                            "name": "NAVIGATION_INACTIVE",
+                            "deprecated": false,
+                            "deprecationMessage": ""
                         },
                         {
-                            "name": "FORM_SUBMIT"
+                            "name": "FORM_SUBMIT",
+                            "deprecated": false,
+                            "deprecationMessage": ""
                         }
                     ],
                     "ctype": "miscellaneous",
                     "subtype": "enum",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "description": "",
                     "file": "src/app/models/button.model.ts"
                 }
@@ -2068,15 +2567,21 @@
                     "childs": [
                         {
                             "name": "QUICK",
-                            "value": "1"
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": 1
                         },
                         {
                             "name": "CUSTOM",
-                            "value": "2"
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "value": 2
                         }
                     ],
                     "ctype": "miscellaneous",
                     "subtype": "enum",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "description": "",
                     "file": "src/app/models/input.model.ts"
                 }
@@ -2340,7 +2845,7 @@
                 "linktype": "component",
                 "name": "QuickCalculatorComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/6",
+                "coverageCount": "0/7",
                 "status": "low"
             },
             {
@@ -2369,7 +2874,7 @@
                 "linktype": "component",
                 "name": "ResultTableComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/6",
+                "coverageCount": "0/8",
                 "status": "low"
             },
             {
@@ -2407,7 +2912,7 @@
                 "linktype": "component",
                 "name": "TableRowComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/7",
+                "coverageCount": "0/9",
                 "status": "low"
             },
             {
@@ -2554,6 +3059,7 @@
             {
                 "filePath": "src/app/utils/helper-functions.ts",
                 "type": "function",
+                "linktype": "miscellaneous",
                 "linksubtype": "function",
                 "name": "ToRange",
                 "coveragePercent": 0,
