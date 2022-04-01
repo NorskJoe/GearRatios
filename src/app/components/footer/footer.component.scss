@@ -9,11 +9,13 @@
     width: 100%;
     text-align: center;
     color: $colour-darkblue;
-
+    display: grid;
 
 }
 .footer-copyright {
     margin: 5px 0;
+    font-weight: bold;
+    color: $colour-darkblue;
 }
 
 .footer-link {
