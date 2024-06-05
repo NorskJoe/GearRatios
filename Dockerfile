@@ -1,4 +1,4 @@
-FROM node:14.17.5 as node
+FROM node:20.14.0 as node
 WORKDIR /app
 COPY . .
 RUN npm i && npm run build --prod
